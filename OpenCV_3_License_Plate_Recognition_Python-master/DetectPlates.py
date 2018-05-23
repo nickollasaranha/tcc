@@ -14,6 +14,7 @@ import PossibleChar
 # module level variables ##########################################################################
 PLATE_WIDTH_PADDING_FACTOR = 1.3
 PLATE_HEIGHT_PADDING_FACTOR = 1.5
+PLATE_DIMENSION_FACTOR = [3.5, 5.5]
 
 ###################################################################################################
 def detectPlatesInScene(imgOriginalScene):
@@ -87,7 +88,8 @@ def detectPlatesInScene(imgOriginalScene):
         possiblePlate = extractPlate(imgOriginalScene, listOfMatchingChars)         # attempt to extract plate
 
         if possiblePlate.imgPlate is not None:                          # if plate was found
-            listOfPossiblePlates.append(possiblePlate)                  # add to list of possible plates
+            if PLATE_DIMENSION_FACTOR[0] <= possiblePlate.proportion <= PLATE_DIMENSION_FACTOR[1]:
+                listOfPossiblePlates.append(possiblePlate)                  # add to list of possible plates
         # end if
     # end for
 
@@ -107,7 +109,7 @@ def detectPlatesInScene(imgOriginalScene):
 
             cv2.imshow("4a", imgContours)
 
-            print ("possible plate " + str(i) + ", click on any image and press a key to continue . . .")
+            print ("possible plate " + str(i) + ", with proportion ", listOfPossiblePlates[i].proportion ,". Click on any image and press a key to continue . . .")
 
             cv2.imshow("4b", listOfPossiblePlates[i].imgPlate)
             cv2.waitKey(0)
@@ -203,7 +205,7 @@ def extractPlate(imgOriginal, listOfMatchingChars):
     imgCropped = cv2.getRectSubPix(imgRotated, (intPlateWidth, intPlateHeight), tuple(ptPlateCenter))
 
     possiblePlate.imgPlate = imgCropped         # copy the cropped plate image into the applicable member variable of the possible plate
-
+    possiblePlate.proportion = imgCropped.shape[1]/imgCropped.shape[0]
     return possiblePlate
 # end function
 
