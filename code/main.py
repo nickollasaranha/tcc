@@ -1,116 +1,135 @@
+# Main.py
+
 import cv2
 import numpy as np
-import math
+import os
 
-# this returns in degrees
-def horizontal_angle(line):
-    return 0 if line[2]-line[0] == 0 else math.degrees(math.atan(((line[3]-line[1])/(line[2]-line[0]))))
+import DetectChars
+import DetectPlates
+import PossiblePlate
+import datetime
 
-# pixels
-def euclid_dist(a, b):
-    return math.sqrt((b[0]-a[0])**2 + (b[1]-a[1])**2)
+# module level variables ##########################################################################
+SCALAR_BLACK = (0.0, 0.0, 0.0)
+SCALAR_WHITE = (255.0, 255.0, 255.0)
+SCALAR_YELLOW = (0.0, 255.0, 255.0)
+SCALAR_GREEN = (0.0, 255.0, 0.0)
+SCALAR_RED = (0.0, 0.0, 255.0)
 
-def line_width(line):
-    return math.sqrt((line[2]-line[0])**2 + (line[3]-line[1])**2)
+showSteps = False
 
-def filter_plate_lines(lines, angle_interval):
+###################################################################################################
+def main():
 
-    new_lines = []
-    vertical_width_range = [15, 50]
-    horizontal_width_range = [15, 100]
+    blnKNNTrainingSuccessful = DetectChars.loadKNNDataAndTrainKNN()         # attempt KNN training
 
-    for line in lines:
+    if blnKNNTrainingSuccessful == False:                               # if KNN training was not successful
+        print ("\nerror: KNN traning was not successful\n")               # show error message
+        return                                                          # and exit program
+    # end if
 
-        # Vertical stuff
-        if (angle_interval[1][0] <= abs(horizontal_angle(line[0])) <= angle_interval[1][1]) and ((vertical_width_range[0] <= line_width(line[0]) <= vertical_width_range[1])):
-            new_lines.append(line)
-        # Horizontal stuff
-        elif (angle_interval[0][0] <= abs(horizontal_angle(line[0])) <= angle_interval[0][1]) and ((horizontal_width_range[0] <= line_width(line[0]) <= horizontal_width_range[1])):
-            new_lines.append(line)
+    imgOriginalScene  = cv2.imread("11.png")               # open image
 
-    return np.array(new_lines) 
+    if imgOriginalScene is None:                            # if image was not read successfully
+        print ("\nerror: image not read from file \n\n")      # print error message to std out
+        os.system("pause")                                  # pause so user can see error message
+        return                                              # and exit program
+    # end if
 
-def draw(lines):
-    img = np.zeros((1080, 1920, 3), np.uint8)
-    drawn_img = lsd.drawSegments(img, lines) 
-    #resized = cv2.resize(drawn_img, (0,0), fx=10, fy=10)
-    cv2.imshow('image', drawn_img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()   
+    # This takes a lot. Must get better
+    listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene)           # detect plates
 
-def auto_canny(image, sigma=0.33):
-  # compute the median of the single channel pixel intensities
-  v = np.median(image)
+    listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)        # detect chars in plates
 
-  # apply automatic Canny edge detection using the computed median
-  lower = int(max(0, (1.0 - sigma) * v))
-  upper = int(min(255, (1.0 + sigma) * v))
-  edged = cv2.Canny(image, lower, upper)
+    cv2.imshow("imgOriginalScene", imgOriginalScene)            # show scene image
 
-  # return the edged image
-  return edged
+    if len(listOfPossiblePlates) == 0:                          # if no plates were found
+        print ("\nno license plates were detected\n")             # inform user no plates were found
+    else:                                                       # else
+        # if we get in here list of possible plates has at leat one plate
 
-img = cv2.imread('track2.png', 0)
+        # sort the list of possible plates in DESCENDING order (most number of chars to least number of chars)
+        listOfPossiblePlates.sort(key = lambda possiblePlate: len(possiblePlate.strChars), reverse = True)
 
-canny = auto_canny(img)
+        # suppose the plate with the most recognized chars (the first plate in sorted by string length descending order) is the actual plate
+        licPlate = listOfPossiblePlates[0]
 
-# Detect lines in the image
-# lsd = cv2.createLineSegmentDetector(cv2.LSD_REFINE_NONE, 1)
-# lines = lsd.detect(img)
-# lines = filter_plate_lines(lines[0], [[0, 10], [85, 95]])
-# img = np.zeros((1080, 1920, 3), np.uint8)
-# drawn_img = lsd.drawSegments(img, lines)
+        cv2.imshow("imgPlate", licPlate.imgPlate)           # show crop of plate and threshold of plate
+        cv2.imshow("imgThresh", licPlate.imgThresh)
 
-dilated_image = cv2.dilate(canny, np.ones((1, 3), np.uint8), iterations = 4)
+        if len(licPlate.strChars) == 0:                     # if no chars were found in the plate
+            print ("\nno characters were detected\n\n")       # show message
+            return                                          # and exit program
+        # end if
 
-# mask = np.array([
-#         [0, 0, 0],
-#         [1, 1, 1],
-#         [0, 0, 0]
-#     ])
+        drawRedRectangleAroundPlate(imgOriginalScene, licPlate)             # draw red rectangle around plate
 
-# filtered_image = cv2.filter2D(dilated_image, -1, mask)
+        print ("\nlicense plate read from image = " + licPlate.strChars + "\n")       # write license plate text to std out
+        print ("----------------------------------------")
 
-#dilated_image = cv2.dilate(gray_image, mask, iterations = 1)
-#
+        writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           # write license plate text on the image
 
-#im2, contours, hierarchy = cv2.findContours(dilated_image.copy(), cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-#for cnt in contours: cv2.drawContours(im2, [cnt], 0, 255, -1)
+        cv2.imshow("imgOriginalScene", imgOriginalScene)                # re-show scene image
+        cv2.imwrite("imgOriginalScene.png", imgOriginalScene)           # write image out to file
 
-cv2.imshow('image', dilated_image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    # end if else
 
-# img = np.zeros((1080, 1920, 3), np.uint8)
-# drawn_img = lsd.drawSegments(img, lines)
+    cv2.waitKey(0)					# hold windows open until user presses a key
 
-# gray_image = cv2.cvtColor(drawn_img, cv2.COLOR_BGR2GRAY)
-# dilated_image = cv2.dilate(gray_image, np.ones((1, 5), np.uint8), iterations = 2)
+    return
+# end main
 
-# ret, thresh = cv2.threshold(dilated_image, 0, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-# im2, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+###################################################################################################
+def drawRedRectangleAroundPlate(imgOriginalScene, licPlate):
 
-# for cnt in contours: cv2.drawContours(im2, [cnt], 0, 255, -1)
+    p2fRectPoints = cv2.boxPoints(licPlate.rrLocationOfPlateInScene)            # get 4 vertices of rotated rect
 
-# cv2.destroyAllWindows()
+    cv2.line(imgOriginalScene, tuple(p2fRectPoints[0]), tuple(p2fRectPoints[1]), SCALAR_RED, 2)         # draw 4 red lines
+    cv2.line(imgOriginalScene, tuple(p2fRectPoints[1]), tuple(p2fRectPoints[2]), SCALAR_RED, 2)
+    cv2.line(imgOriginalScene, tuple(p2fRectPoints[2]), tuple(p2fRectPoints[3]), SCALAR_RED, 2)
+    cv2.line(imgOriginalScene, tuple(p2fRectPoints[3]), tuple(p2fRectPoints[0]), SCALAR_RED, 2)
+# end function
 
-# kernel = np.ones((3, 7), np.uint8)
-# eroded = cv2.erode(im2, kernel, iterations = 3)
-# #moth_image = cv2.filter2D(im2, -1, kernel_smoth)
+###################################################################################################
+def writeLicensePlateCharsOnImage(imgOriginalScene, licPlate):
+    ptCenterOfTextAreaX = 0                             # this will be the center of the area the text will be written to
+    ptCenterOfTextAreaY = 0
 
-# cv2.imshow('image', drawn_img)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
-#draw(lines)
-# for line in horizontal_lines:
+    ptLowerLeftTextOriginX = 0                          # this will be the bottom left of the area that the text will be written to
+    ptLowerLeftTextOriginY = 0
 
-#    print (line)
-#    #drawn_img = lsd.drawSegments(roi, np.array(line)) 
-#    draw(np.array(line))
+    sceneHeight, sceneWidth, sceneNumChannels = imgOriginalScene.shape
+    plateHeight, plateWidth, plateNumChannels = licPlate.imgPlate.shape
 
-#TODO:
-# Try to remove horizontal segments between bla bla
-# Try to remove vertical segments higher than bla bla
-# Create a func to check for vertical distances between horizontal lines.
-# Create a func to check for horizontal distances between vertical lines.
-# Wrap it all and done.
+    intFontFace = cv2.FONT_HERSHEY_SIMPLEX                      # choose a plain jane font
+    fltFontScale = float(plateHeight) / 30.0                    # base font scale on height of plate area
+    intFontThickness = int(round(fltFontScale * 1.5))           # base font thickness on font scale
+
+    textSize, baseline = cv2.getTextSize(licPlate.strChars, intFontFace, fltFontScale, intFontThickness)        # call getTextSize
+
+            # unpack roatated rect into center point, width and height, and angle
+    ( (intPlateCenterX, intPlateCenterY), (intPlateWidth, intPlateHeight), fltCorrectionAngleInDeg ) = licPlate.rrLocationOfPlateInScene
+
+    intPlateCenterX = int(intPlateCenterX)              # make sure center is an integer
+    intPlateCenterY = int(intPlateCenterY)
+
+    ptCenterOfTextAreaX = int(intPlateCenterX)         # the horizontal location of the text area is the same as the plate
+
+    if intPlateCenterY < (sceneHeight * 0.75):                                                  # if the license plate is in the upper 3/4 of the image
+        ptCenterOfTextAreaY = int(round(intPlateCenterY)) + int(round(plateHeight * 1.6))      # write the chars in below the plate
+    else:                                                                                       # else if the license plate is in the lower 1/4 of the image
+        ptCenterOfTextAreaY = int(round(intPlateCenterY)) - int(round(plateHeight * 1.6))      # write the chars in above the plate
+    # end if
+
+    textSizeWidth, textSizeHeight = textSize                # unpack text size width and height
+
+    ptLowerLeftTextOriginX = int(ptCenterOfTextAreaX - (textSizeWidth / 2))           # calculate the lower left origin of the text area
+    ptLowerLeftTextOriginY = int(ptCenterOfTextAreaY + (textSizeHeight / 2))          # based on the text area center, width, and height
+
+            # write the text on the image
+    cv2.putText(imgOriginalScene, licPlate.strChars, (ptLowerLeftTextOriginX, ptLowerLeftTextOriginY), intFontFace, fltFontScale, SCALAR_YELLOW, intFontThickness)
+# end function
+
+###################################################################################################
+if __name__ == "__main__":
+    main()

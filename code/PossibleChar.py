@@ -29,13 +29,4 @@ class PossibleChar:
 
         self.fltAspectRatio = float(self.intBoundingRectWidth) / float(self.intBoundingRectHeight)
     # end constructor
-
 # end class
-
-
-
-
-
-
-
-

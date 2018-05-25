@@ -15,9 +15,4 @@ class PossiblePlate:
         self.rrLocationOfPlateInScene = None
         self.strChars = ""
     # end constructor
-
 # end class
-
-
-
-

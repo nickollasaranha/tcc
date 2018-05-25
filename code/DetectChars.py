@@ -16,11 +16,10 @@ kNearest = cv2.ml.KNearest_create()
 # constants for checkIfPossibleChar, this checks one possible char only (does not compare to another char)
 MIN_PIXEL_WIDTH = 2
 MIN_PIXEL_HEIGHT = 8
-
-MIN_ASPECT_RATIO = 0.25
-MAX_ASPECT_RATIO = 1.0
-
-MIN_PIXEL_AREA = 80
+MIN_AREA = 80
+MAX_AREA = 1000
+MIN_ASPECT_RATIO = 0.4
+MAX_ASPECT_RATIO = 0.7
 
 # constants for comparing two chars
 MIN_DIAG_SIZE_MULTIPLE_AWAY = 0.3
@@ -64,7 +63,7 @@ def loadKNNDataAndTrainKNN():
 
     npaClassifications = npaClassifications.reshape((npaClassifications.size, 1))       # reshape numpy array to 1d, necessary to pass to call to train
 
-    kNearest.setDefaultK(1)                                                             # set default K to 1
+    kNearest.setDefaultK(3)                                                             # set default K to 1
 
     kNearest.train(npaFlattenedImages, cv2.ml.ROW_SAMPLE, npaClassifications)           # train KNN object
 
@@ -77,12 +76,11 @@ def detectCharsInPlates(listOfPossiblePlates):
     imgContours = None
     contours = []
 
-    if len(listOfPossiblePlates) == 0:          # if list of possible plates is empty
-        return listOfPossiblePlates             # return
+    # if list of possible plates is empty, return
+    if len(listOfPossiblePlates) == 0: return listOfPossiblePlates
     # end if
 
-            # at this point we can be sure the list of possible plates has at least one plate
-
+    # at this point we can be sure the list of possible plates has at least one plate
     for possiblePlate in listOfPossiblePlates:          # for each possible plate, this is a big for loop that takes up most of the function
 
         possiblePlate.imgGrayscale, possiblePlate.imgThresh = Preprocess.preprocess(possiblePlate.imgPlate)     # preprocess to get grayscale and threshold images
@@ -93,10 +91,10 @@ def detectCharsInPlates(listOfPossiblePlates):
             cv2.imshow("5c", possiblePlate.imgThresh)
         # end if # show steps #####################################################################
 
-                # increase size of plate image for easier viewing and char detection
+        # increase size of plate image for easier viewing and char detection
         possiblePlate.imgThresh = cv2.resize(possiblePlate.imgThresh, (0, 0), fx = 1.6, fy = 1.6)
 
-                # threshold again to eliminate any gray areas
+        # threshold again to eliminate any gray areas
         thresholdValue, possiblePlate.imgThresh = cv2.threshold(possiblePlate.imgThresh, 0.0, 255.0, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 
         if Main.showSteps == True: # show steps ###################################################
@@ -232,7 +230,7 @@ def findPossibleCharsInPlate(imgGrayscale, imgThresh):
     contours = []
     imgThreshCopy = imgThresh.copy()
 
-            # find all contours in plate
+    # find all contours in plate
     imgContours, contours, npaHierarchy = cv2.findContours(imgThreshCopy, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
     for contour in contours:                        # for each contour
@@ -248,11 +246,16 @@ def findPossibleCharsInPlate(imgGrayscale, imgThresh):
 
 ###################################################################################################
 def checkIfPossibleChar(possibleChar):
-            # this function is a 'first pass' that does a rough check on a contour to see if it could be a char,
-            # note that we are not (yet) comparing the char to other chars to look for a group
-    if (possibleChar.intBoundingRectArea > MIN_PIXEL_AREA and
-        possibleChar.intBoundingRectWidth > MIN_PIXEL_WIDTH and possibleChar.intBoundingRectHeight > MIN_PIXEL_HEIGHT and
-        MIN_ASPECT_RATIO < possibleChar.fltAspectRatio and possibleChar.fltAspectRatio < MAX_ASPECT_RATIO):
+    # this function is a 'first pass' that does a rough check on a contour to see if it could be a char,
+    # note that we are not (yet) comparing the char to other chars to look for a group
+
+    if (
+        possibleChar.intBoundingRectWidth > MIN_PIXEL_WIDTH and 
+        possibleChar.intBoundingRectHeight > MIN_PIXEL_HEIGHT and
+        (MIN_ASPECT_RATIO <= possibleChar.fltAspectRatio <= MAX_ASPECT_RATIO) and
+        (MIN_AREA <= possibleChar.intBoundingRectArea <= MAX_AREA)
+        ):
+        #print ("width: ", possibleChar.intBoundingRectWidth, " height: ", possibleChar.intBoundingRectHeight, " area: ", possibleChar.intBoundingRectArea)
         return True
     else:
         return False
@@ -261,9 +264,9 @@ def checkIfPossibleChar(possibleChar):
 
 ###################################################################################################
 def findListOfListsOfMatchingChars(listOfPossibleChars):
-            # with this function, we start off with all the possible chars in one big list
-            # the purpose of this function is to re-arrange the one big list of chars into a list of lists of matching chars,
-            # note that chars that are not found to be in a group of matches do not need to be considered further
+    # with this function, we start off with all the possible chars in one big list
+    # the purpose of this function is to re-arrange the one big list of chars into a list of lists of matching chars,
+    # note that chars that are not found to be in a group of matches do not need to be considered further
     listOfListsOfMatchingChars = []                  # this will be the return value
 
     for possibleChar in listOfPossibleChars:                        # for each possible char in the one big list of chars
@@ -276,13 +279,13 @@ def findListOfListsOfMatchingChars(listOfPossibleChars):
                                                 # to save the list in any way since it did not have enough chars to be a possible plate
         # end if
 
-                                                # if we get here, the current list passed test as a "group" or "cluster" of matching chars
+        # if we get here, the current list passed test as a "group" or "cluster" of matching chars
         listOfListsOfMatchingChars.append(listOfMatchingChars)      # so add to our list of lists of matching chars
 
         listOfPossibleCharsWithCurrentMatchesRemoved = []
 
-                                                # remove the current list of matching chars from the big list so we don't use those same chars twice,
-                                                # make sure to make a new big list for this since we don't want to change the original big list
+        # remove the current list of matching chars from the big list so we don't use those same chars twice,
+        # make sure to make a new big list for this since we don't want to change the original big list
         listOfPossibleCharsWithCurrentMatchesRemoved = list(set(listOfPossibleChars) - set(listOfMatchingChars))
 
         recursiveListOfListsOfMatchingChars = findListOfListsOfMatchingChars(listOfPossibleCharsWithCurrentMatchesRemoved)      # recursive call
@@ -300,8 +303,8 @@ def findListOfListsOfMatchingChars(listOfPossibleChars):
 
 ###################################################################################################
 def findListOfMatchingChars(possibleChar, listOfChars):
-            # the purpose of this function is, given a possible char and a big list of possible chars,
-            # find all chars in the big list that are a match for the single possible char, and return those matching chars as a list
+    # the purpose of this function is, given a possible char and a big list of possible chars,
+    # find all chars in the big list that are a match for the single possible char, and return those matching chars as a list
     listOfMatchingChars = []                # this will be the return value
 
     for possibleMatchingChar in listOfChars:                # for each char in big list
@@ -409,16 +412,17 @@ def recognizeCharsInPlate(imgThresh, listOfMatchingChars):
 
         cv2.rectangle(imgThreshColor, pt1, pt2, Main.SCALAR_GREEN, 2)           # draw green box around the char
 
-                # crop char out of threshold image
+        # crop char out of threshold image
         imgROI = imgThresh[currentChar.intBoundingRectY : currentChar.intBoundingRectY + currentChar.intBoundingRectHeight,
                            currentChar.intBoundingRectX : currentChar.intBoundingRectX + currentChar.intBoundingRectWidth]
 
+        #cv2.imshow("imgRoi", imgROI)
+        
         imgROIResized = cv2.resize(imgROI, (RESIZED_CHAR_IMAGE_WIDTH, RESIZED_CHAR_IMAGE_HEIGHT))           # resize image, this is necessary for char recognition
-
+        #cv2.imshow("imgROIResized", imgROIResized)
         npaROIResized = imgROIResized.reshape((1, RESIZED_CHAR_IMAGE_WIDTH * RESIZED_CHAR_IMAGE_HEIGHT))        # flatten image into 1d numpy array
-
         npaROIResized = np.float32(npaROIResized)               # convert from 1d numpy array of ints to 1d numpy array of floats
-
+        #cv2.waitKey(0)
         retval, npaResults, neigh_resp, dists = kNearest.findNearest(npaROIResized, k = 1)              # finally we can call findNearest !!!
 
         strCurrentChar = str(chr(int(npaResults[0][0])))            # get character from results
@@ -431,13 +435,6 @@ def recognizeCharsInPlate(imgThresh, listOfMatchingChars):
         cv2.imshow("10", imgThreshColor)
     # end if # show steps #########################################################################
 
+
     return strChars
 # end function
-
-
-
-
-
-
-
-
