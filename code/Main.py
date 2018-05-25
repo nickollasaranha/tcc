@@ -21,63 +21,112 @@ showSteps = False
 ###################################################################################################
 def main():
 
-    blnKNNTrainingSuccessful = DetectChars.loadKNNDataAndTrainKNN()         # attempt KNN training
+    # KNN is for chr classification
+    blnKNNTrainingSuccessful = DetectChars.loadKNNDataAndTrainKNN()
+    imgOriginalScene  = cv2.imread("1.png")
 
-    if blnKNNTrainingSuccessful == False:                               # if KNN training was not successful
-        print ("\nerror: KNN traning was not successful\n")               # show error message
-        return                                                          # and exit program
-    # end if
+    if blnKNNTrainingSuccessful == False:
+        print ("\nerror: KNN traning was not successful.\n")
+        return
 
-    imgOriginalScene  = cv2.imread("11.png")               # open image
+    if imgOriginalScene is None:
+        print ("\nerror: Couldn't load image file.\n\n")
+        os.system("pause")
+        return
 
-    if imgOriginalScene is None:                            # if image was not read successfully
-        print ("\nerror: image not read from file \n\n")      # print error message to std out
-        os.system("pause")                                  # pause so user can see error message
-        return                                              # and exit program
-    # end if
+    # Start plate recognition
+    # Start benchmark
+    benchTime = datetime.datetime.now()
+    listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene)
+    print ("Detect plates took ", datetime.datetime.now()-benchTime, " with ", len(listOfPossiblePlates), " possible plates.\n")
 
-    # This takes a lot. Must get better
-    listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene)           # detect plates
+    benchTime = datetime.datetime.now()
+    # detect chars in plates
+    listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)
+    print ("Detect chars took ", datetime.datetime.now()-benchTime)
 
-    listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)        # detect chars in plates
+    cv2.imshow("imgOriginalScene", imgOriginalScene)
 
-    cv2.imshow("imgOriginalScene", imgOriginalScene)            # show scene image
-
-    if len(listOfPossiblePlates) == 0:                          # if no plates were found
-        print ("\nno license plates were detected\n")             # inform user no plates were found
-    else:                                                       # else
+    if len(listOfPossiblePlates) == 0:
+        # Inform the user we couldn't find plates
+        print ("\nCouldn't find license plates.\n")
+    else:
         # if we get in here list of possible plates has at leat one plate
-
         # sort the list of possible plates in DESCENDING order (most number of chars to least number of chars)
         listOfPossiblePlates.sort(key = lambda possiblePlate: len(possiblePlate.strChars), reverse = True)
 
-        # suppose the plate with the most recognized chars (the first plate in sorted by string length descending order) is the actual plate
+        # suppose the plate with the most recognized chars (the first plate in sorted by string length descending order) 
+        #is the actual plate
         licPlate = listOfPossiblePlates[0]
 
-        cv2.imshow("imgPlate", licPlate.imgPlate)           # show crop of plate and threshold of plate
+        # show crop of plate and threshold of plate
+        cv2.imshow("imgPlate", licPlate.imgPlate)
         cv2.imshow("imgThresh", licPlate.imgThresh)
 
-        if len(licPlate.strChars) == 0:                     # if no chars were found in the plate
-            print ("\nno characters were detected\n\n")       # show message
-            return                                          # and exit program
-        # end if
+        # Error is no license plates found
+        if len(licPlate.strChars) == 0:
+            print ("\nno characters were detected\n\n")
+            return
 
-        drawRedRectangleAroundPlate(imgOriginalScene, licPlate)             # draw red rectangle around plate
+        # draw red rectangle around plate
+        drawRedRectangleAroundPlate(imgOriginalScene, licPlate)
 
-        print ("\nlicense plate read from image = " + licPlate.strChars + "\n")       # write license plate text to std out
+        # Get heuristic
+        licPlate.strChars = heuristic(licPlate.strChars)
+
+        # write license plate text to std out
+        print ("\nlicense plate read from image = " + licPlate.strChars + "\n")
         print ("----------------------------------------")
 
-        writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           # write license plate text on the image
+        # write license plate text on the image
+        writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           
 
-        cv2.imshow("imgOriginalScene", imgOriginalScene)                # re-show scene image
-        cv2.imwrite("imgOriginalScene.png", imgOriginalScene)           # write image out to file
+        # re-show scene and write image file
+        cv2.imshow("imgOriginalScene", imgOriginalScene)
+        cv2.imwrite("imgOriginalScene.png", imgOriginalScene)
 
-    # end if else
-
-    cv2.waitKey(0)					# hold windows open until user presses a key
+    # hold windows open until user presses a key
+    cv2.waitKey(0)					
 
     return
-# end main
+
+def to_consoante(digit):
+    switcher = {
+        "0": "O",
+        "1": "I",
+        "2": "Z",
+        "3": "B",
+        "4": "R",
+        "5": "S",
+        "6": "G",
+        "7": "T",
+        "8": "B",
+        "9": "B"
+    }
+    return switcher.get(digit, str(digit))
+
+def to_digit(consoante):
+    switcher = {
+        "O": "0",
+        "I": "1",
+        "Z": "2",
+        "B": "8",
+        "S": "5",
+        "T": "7",
+        "J": "1",
+        "U": "0"
+    }
+    return switcher.get(consoante, str(consoante))
+
+def heuristic(strChar):
+
+    consoantes = list(strChar[0:3])
+    numeros = list(strChar[3:])
+
+    consoantes = [to_consoante(i) for i in consoantes]
+    numeros = [to_digit(i) for i in numeros]
+
+    return "".join(consoantes+numeros)
 
 ###################################################################################################
 def drawRedRectangleAroundPlate(imgOriginalScene, licPlate):
@@ -88,7 +137,6 @@ def drawRedRectangleAroundPlate(imgOriginalScene, licPlate):
     cv2.line(imgOriginalScene, tuple(p2fRectPoints[1]), tuple(p2fRectPoints[2]), SCALAR_RED, 2)
     cv2.line(imgOriginalScene, tuple(p2fRectPoints[2]), tuple(p2fRectPoints[3]), SCALAR_RED, 2)
     cv2.line(imgOriginalScene, tuple(p2fRectPoints[3]), tuple(p2fRectPoints[0]), SCALAR_RED, 2)
-# end function
 
 ###################################################################################################
 def writeLicensePlateCharsOnImage(imgOriginalScene, licPlate):
@@ -121,14 +169,17 @@ def writeLicensePlateCharsOnImage(imgOriginalScene, licPlate):
         ptCenterOfTextAreaY = int(round(intPlateCenterY)) - int(round(plateHeight * 1.6))      # write the chars in above the plate
     # end if
 
-    textSizeWidth, textSizeHeight = textSize                # unpack text size width and height
+    # unpack text size width and height
+    textSizeWidth, textSizeHeight = textSize               
 
-    ptLowerLeftTextOriginX = int(ptCenterOfTextAreaX - (textSizeWidth / 2))           # calculate the lower left origin of the text area
-    ptLowerLeftTextOriginY = int(ptCenterOfTextAreaY + (textSizeHeight / 2))          # based on the text area center, width, and height
+    # calculate the lower left origin of the text area
+    ptLowerLeftTextOriginX = int(ptCenterOfTextAreaX - (textSizeWidth / 2))
 
-            # write the text on the image
-    cv2.putText(imgOriginalScene, licPlate.strChars, (ptLowerLeftTextOriginX, ptLowerLeftTextOriginY), intFontFace, fltFontScale, SCALAR_YELLOW, intFontThickness)
-# end function
+    # based on the text area center, width, and height
+    ptLowerLeftTextOriginY = int(ptCenterOfTextAreaY + (textSizeHeight / 2))
+
+    # write the text on the image
+    cv2.putText(imgOriginalScene, licPlate.strChars, (ptLowerLeftTextOriginX, ptLowerLeftTextOriginY), intFontFace, fltFontScale, SCALAR_GREEN, intFontThickness)
 
 ###################################################################################################
 if __name__ == "__main__":

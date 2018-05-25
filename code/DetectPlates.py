@@ -13,9 +13,9 @@ import PossiblePlate
 import PossibleChar
 
 # module level variables ##########################################################################
-PLATE_WIDTH_PADDING_FACTOR = 1.3
-PLATE_HEIGHT_PADDING_FACTOR = 1.5
-PLATE_DIMENSION_FACTOR = [3.5, 5.5]
+PLATE_WIDTH_PADDING_FACTOR = 1.1
+PLATE_HEIGHT_PADDING_FACTOR = 1.1
+PLATE_DIMENSION_FACTOR = [3.5, 6]
 
 ###################################################################################################
 def detectPlatesInScene(imgOriginalScene):
@@ -42,9 +42,7 @@ def detectPlatesInScene(imgOriginalScene):
 
     # find all possible chars in the scene,
     # this function first finds all contours, then only includes contours that could be chars (without comparison to other chars yet)
-    print ("Calling find chars in scene")
     listOfPossibleCharsInScene = findPossibleCharsInScene(imgThreshScene)
-    print ("got ", len(listOfPossibleCharsInScene), " possible chars")
 
     if Main.showSteps == True: # show steps #######################################################
         print ("step 2 - len(listOfPossibleCharsInScene) = " + str(len(listOfPossibleCharsInScene)))         # 131 with MCLRNF1 image
@@ -63,9 +61,7 @@ def detectPlatesInScene(imgOriginalScene):
 
     # given a list of all possible chars, find groups of matching chars
     # in the next steps each group of matching chars will attempt to be recognized as a plate
-    print ("Imma call findListOfList shit")
     listOfListsOfMatchingCharsInScene = DetectChars.findListOfListsOfMatchingChars(listOfPossibleCharsInScene)
-    print ("Done calling this 7sec function")
 
     if Main.showSteps == True: # show steps #######################################################
         print ("step 3 - listOfListsOfMatchingCharsInScene.Count = " + str(len(listOfListsOfMatchingCharsInScene)))    # 13 with MCLRNF1 image
@@ -89,16 +85,15 @@ def detectPlatesInScene(imgOriginalScene):
         cv2.imshow("3", imgContours)
     # end if # show steps #########################################################################
 
-    for listOfMatchingChars in listOfListsOfMatchingCharsInScene:                   # for each group of matching chars
-        possiblePlate = extractPlate(imgOriginalScene, listOfMatchingChars)         # attempt to extract plate
+    # Attempt to attach plate for each group of matching chars.
+    for listOfMatchingChars in listOfListsOfMatchingCharsInScene:
+        possiblePlate = extractPlate(imgOriginalScene, listOfMatchingChars)
 
-        if possiblePlate.imgPlate is not None:                          # if plate was found
+        if possiblePlate.imgPlate is not None:
             if PLATE_DIMENSION_FACTOR[0] <= possiblePlate.proportion <= PLATE_DIMENSION_FACTOR[1]:
-                listOfPossiblePlates.append(possiblePlate)                  # add to list of possible plates
-        # end if
-    # end for
+                listOfPossiblePlates.append(possiblePlate)
 
-    print ("\n" + str(len(listOfPossiblePlates)) + " possible plates found")          # 13 with MCLRNF1 image
+    print ("\n" + str(len(listOfPossiblePlates)) + " possible plates found")
 
     if Main.showSteps == True: # show steps #######################################################
         print ("\n")
@@ -175,7 +170,7 @@ def extractPlate(imgOriginal, listOfMatchingChars):
     fltPlateCenterY = (listOfMatchingChars[0].intCenterY + listOfMatchingChars[len(listOfMatchingChars) - 1].intCenterY) / 2.0
 
     ptPlateCenter = fltPlateCenterX, fltPlateCenterY
-
+    
     # calculate plate width and height
     intPlateWidth = int((listOfMatchingChars[len(listOfMatchingChars) - 1].intBoundingRectX + listOfMatchingChars[len(listOfMatchingChars) - 1].intBoundingRectWidth - listOfMatchingChars[0].intBoundingRectX) * PLATE_WIDTH_PADDING_FACTOR)
 
