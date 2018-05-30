@@ -42,6 +42,7 @@ def get_track_info(track, dataset, responses):
     # Get plate number
     plate_number = list(re.sub("[-\nplate: ]", "", lines[6]))
     for char in plate_number:
+        if char=='O': char = "0"
         responses.append(ord(char))
 
 def createDataset(directory):
