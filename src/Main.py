@@ -179,38 +179,38 @@ def writeLicensePlateCharsOnImage(imgOriginalScene, licPlate):
 ###################################################################################################
 if __name__ == "__main__":
     
-    # directory = "C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\"
-    # text_extension = ".txt"
-    # image_extension = ".png"
-    # count_rights = 0
-    # total_counts = 0
+    directory = "C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\"
+    text_extension = ".txt"
+    image_extension = ".png"
+    count_rights = 0
+    total_counts = 0
 
-    # for folder in listdir(directory):
+    for folder in listdir(directory):
 
-    #     tracks = [os.path.splitext(directory+folder+"\\"+track)[0] for track in listdir(directory+folder) if os.path.splitext(directory+folder+"\\"+track)[1]==".txt"]
-    #     print ("Working on folder", folder, "of", len(listdir(directory)))
-    #     flag = True
-    #     total_counts+=1
-    #     for track in tracks:
+        tracks = [os.path.splitext(directory+folder+"\\"+track)[0] for track in listdir(directory+folder) if os.path.splitext(directory+folder+"\\"+track)[1]==".txt"]
+        print ("Working on folder", folder, "of", len(listdir(directory)))
+        flag = True
+        total_counts+=1
+        for track in tracks:
 
-    #         file = open(track+text_extension)
-    #         predictedPlate = recognize(cv2.imread(track+image_extension))
-    #         #imgOriginalScene = cv2.imread()
-    #         #imgThreshScene, _ = Preprocess.preprocess(imgOriginalScene)
+            file = open(track+text_extension)
+            predictedPlate = recognize(cv2.imread(track+image_extension))
+            #imgOriginalScene = cv2.imread()
+            #imgThreshScene, _ = Preprocess.preprocess(imgOriginalScene)
 
-    #         # # Get all chars position
-    #         lines = file.readlines()
-    #         # chars_position = [re.sub("[a-z:\n]", "", line).split(" ")[2:] for line in lines[8:]]
-    #         # list_char = [get_char(char.copy(), imgThreshScene, dataset) for char in chars_position]
+            # # Get all chars position
+            lines = file.readlines()
+            # chars_position = [re.sub("[a-z:\n]", "", line).split(" ")[2:] for line in lines[8:]]
+            # list_char = [get_char(char.copy(), imgThreshScene, dataset) for char in chars_position]
 
-    #         # Get plate number
-    #         plate_number = re.sub("[-\nplate: ]", "", lines[6])
-    #         if plate_number == predictedPlate and flag:
-    #                 count_rights+=1
-    #                 flag = False
+            # Get plate number
+            plate_number = re.sub("[-\nplate: ]", "", lines[6])
+            if plate_number == predictedPlate and flag:
+                    count_rights+=1
+                    flag = False
 
-    #         print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number)   )
+            print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number)   )
 
-    # print ("Total of:", total_counts, "predicted correted:", count_rights)
-    print(recognize(cv2.imread("11.png")))
+    print ("Total of:", total_counts, "predicted correted:", count_rights)
+    # print(recognize(cv2.imread("11.png")))
     #main()
