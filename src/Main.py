@@ -3,6 +3,8 @@
 import cv2
 import numpy as np
 import os
+import re
+from os import listdir
 
 import DetectChars
 import DetectPlates
@@ -16,18 +18,10 @@ SCALAR_YELLOW = (0.0, 255.0, 255.0)
 SCALAR_GREEN = (0.0, 255.0, 0.0)
 SCALAR_RED = (0.0, 0.0, 255.0)
 
-showSteps = False
+showSteps = True
 
 ###################################################################################################
-def main():
-
-    # KNN is for chr classification
-    blnKNNTrainingSuccessful = DetectChars.loadKNNDataAndTrainKNN()
-    imgOriginalScene  = cv2.imread("1.png")
-
-    if blnKNNTrainingSuccessful == False:
-        print ("\nerror: KNN traning was not successful.\n")
-        return
+def recognize(imgOriginalScene):
 
     if imgOriginalScene is None:
         print ("\nerror: Couldn't load image file.\n\n")
@@ -38,18 +32,19 @@ def main():
     # Start benchmark
     benchTime = datetime.datetime.now()
     listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene)
-    print ("Detect plates took ", datetime.datetime.now()-benchTime, " with ", len(listOfPossiblePlates), " possible plates.\n")
+    #print ("Detect plates took ", datetime.datetime.now()-benchTime, " with ", len(listOfPossiblePlates), " possible plates.\n")
 
     benchTime = datetime.datetime.now()
     # detect chars in plates
     listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)
-    print ("Detect chars took ", datetime.datetime.now()-benchTime)
+    #print ("Detect chars took ", datetime.datetime.now()-benchTime)
 
-    cv2.imshow("imgOriginalScene", imgOriginalScene)
+    #cv2.imshow("imgOriginalScene", imgOriginalScene)
 
     if len(listOfPossiblePlates) == 0:
         # Inform the user we couldn't find plates
-        print ("\nCouldn't find license plates.\n")
+        #print ("\nCouldn't find license plates.\n")
+        return ""
     else:
         # if we get in here list of possible plates has at leat one plate
         # sort the list of possible plates in DESCENDING order (most number of chars to least number of chars)
@@ -60,13 +55,13 @@ def main():
         licPlate = listOfPossiblePlates[0]
 
         # show crop of plate and threshold of plate
-        cv2.imshow("imgPlate", licPlate.imgPlate)
-        cv2.imshow("imgThresh", licPlate.imgThresh)
+        # cv2.imshow("imgPlate", licPlate.imgPlate)
+        # cv2.imshow("imgThresh", licPlate.imgThresh)
 
         # Error is no license plates found
         if len(licPlate.strChars) == 0:
-            print ("\nno characters were detected\n\n")
-            return
+            #print ("\nno characters were detected\n\n")
+            return ""
 
         # draw red rectangle around plate
         drawRedRectangleAroundPlate(imgOriginalScene, licPlate)
@@ -75,20 +70,19 @@ def main():
         licPlate.strChars = heuristic(licPlate.strChars)
 
         # write license plate text to std out
-        print ("\nlicense plate read from image = " + licPlate.strChars + "\n")
-        print ("----------------------------------------")
+        #print (licPlate.strChars)
 
         # write license plate text on the image
         writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           
 
         # re-show scene and write image file
-        cv2.imshow("imgOriginalScene", imgOriginalScene)
-        cv2.imwrite("imgOriginalScene.png", imgOriginalScene)
+        #cv2.imshow("imgOriginalScene", imgOriginalScene)
+        # cv2.imwrite("imgOriginalScene.png", imgOriginalScene)
 
     # hold windows open until user presses a key
-    cv2.waitKey(0)					
+    #cv2.waitKey(0)					
 
-    return
+    return licPlate.strChars
 
 def to_consoante(digit):
     switcher = {
@@ -114,7 +108,8 @@ def to_digit(consoante):
         "S": "5",
         "T": "7",
         "J": "1",
-        "U": "0"
+        "U": "0",
+        "P": "8"
     }
     return switcher.get(consoante, str(consoante))
 
@@ -183,4 +178,39 @@ def writeLicensePlateCharsOnImage(imgOriginalScene, licPlate):
 
 ###################################################################################################
 if __name__ == "__main__":
-    main()
+    
+    # directory = "C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\"
+    # text_extension = ".txt"
+    # image_extension = ".png"
+    # count_rights = 0
+    # total_counts = 0
+
+    # for folder in listdir(directory):
+
+    #     tracks = [os.path.splitext(directory+folder+"\\"+track)[0] for track in listdir(directory+folder) if os.path.splitext(directory+folder+"\\"+track)[1]==".txt"]
+    #     print ("Working on folder", folder, "of", len(listdir(directory)))
+    #     flag = True
+    #     total_counts+=1
+    #     for track in tracks:
+
+    #         file = open(track+text_extension)
+    #         predictedPlate = recognize(cv2.imread(track+image_extension))
+    #         #imgOriginalScene = cv2.imread()
+    #         #imgThreshScene, _ = Preprocess.preprocess(imgOriginalScene)
+
+    #         # # Get all chars position
+    #         lines = file.readlines()
+    #         # chars_position = [re.sub("[a-z:\n]", "", line).split(" ")[2:] for line in lines[8:]]
+    #         # list_char = [get_char(char.copy(), imgThreshScene, dataset) for char in chars_position]
+
+    #         # Get plate number
+    #         plate_number = re.sub("[-\nplate: ]", "", lines[6])
+    #         if plate_number == predictedPlate and flag:
+    #                 count_rights+=1
+    #                 flag = False
+
+    #         print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number)   )
+
+    # print ("Total of:", total_counts, "predicted correted:", count_rights)
+    recognize(cv2.imread("C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\track0145\\track0145[01].png"))
+    #main()

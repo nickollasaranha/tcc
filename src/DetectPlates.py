@@ -86,14 +86,14 @@ def detectPlatesInScene(imgOriginalScene):
     # end if # show steps #########################################################################
 
     # Attempt to attach plate for each group of matching chars.
-    for listOfMatchingChars in listOfListsOfMatchingCharsInScene:
+    for listOfMatchingChars in (listOfListsOfMatchingCharsInScene):
         possiblePlate = extractPlate(imgOriginalScene, listOfMatchingChars)
 
         if possiblePlate.imgPlate is not None:
             if PLATE_DIMENSION_FACTOR[0] <= possiblePlate.proportion <= PLATE_DIMENSION_FACTOR[1]:
                 listOfPossiblePlates.append(possiblePlate)
 
-    print ("\n" + str(len(listOfPossiblePlates)) + " possible plates found")
+    #print ("\n" + str(len(listOfPossiblePlates)) + " possible plates found")
 
     if Main.showSteps == True: # show steps #######################################################
         print ("\n")

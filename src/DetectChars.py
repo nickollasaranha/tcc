@@ -10,7 +10,18 @@ import Preprocess
 import PossibleChar
 
 # module level variables ##########################################################################
-
+img_shape = [24, 16]
+cell_size = (4, 4)  # h x w in pixels
+block_size = (2, 2)  # h x w in cells
+nbins = 9  # number of orientation bins
+hog = cv2.HOGDescriptor(_winSize=(img_shape[1] // cell_size[1] * cell_size[1],
+                                  img_shape[0] // cell_size[0] * cell_size[0]),
+                        _blockSize=(block_size[1] * cell_size[1],
+                                    block_size[0] * cell_size[0]),
+                        _blockStride=(cell_size[1], cell_size[0]),
+                        _cellSize=(cell_size[1], cell_size[0]),
+                        _nbins=nbins)
+svm = cv2.ml.SVM_load("svm.dat")
 kNearest = cv2.ml.KNearest_create()
 
 # constants for checkIfPossibleChar, this checks one possible char only (does not compare to another char)
@@ -18,7 +29,7 @@ MIN_PIXEL_WIDTH = 2
 MIN_PIXEL_HEIGHT = 8
 MIN_AREA = 80
 MAX_AREA = 1000
-MIN_ASPECT_RATIO = 0.4
+MIN_ASPECT_RATIO = 0.1
 MAX_ASPECT_RATIO = 0.7
 
 # constants for comparing two chars
@@ -35,40 +46,10 @@ MAX_ANGLE_BETWEEN_CHARS = 12.0
 # other constants
 MIN_NUMBER_OF_MATCHING_CHARS = 3
 
-RESIZED_CHAR_IMAGE_WIDTH = 20
-RESIZED_CHAR_IMAGE_HEIGHT = 30
+RESIZED_CHAR_IMAGE_WIDTH = 16
+RESIZED_CHAR_IMAGE_HEIGHT = 24
 
 MIN_CONTOUR_AREA = 100
-
-###################################################################################################
-def loadKNNDataAndTrainKNN():
-    allContoursWithData = []                # declare empty lists,
-    validContoursWithData = []              # we will fill these shortly
-
-    try:
-        npaClassifications = np.loadtxt("classifications.txt", np.float32)                  # read in training classifications
-    except:                                                                                 # if file could not be opened
-        print ("error, unable to open classifications.txt, exiting program\n")                # show error message
-        os.system("pause")
-        return False                                                                        # and return False
-    # end try
-
-    try:
-        npaFlattenedImages = np.loadtxt("flattened_images.txt", np.float32)                 # read in training images
-    except:                                                                                 # if file could not be opened
-        print ("error, unable to open flattened_images.txt, exiting program\n")             # show error message
-        os.system("pause")
-        return False                                                                        # and return False
-    # end try
-
-    npaClassifications = npaClassifications.reshape((npaClassifications.size, 1))       # reshape numpy array to 1d, necessary to pass to call to train
-
-    kNearest.setDefaultK(1)                                                             # set default K to 1
-
-    kNearest.train(npaFlattenedImages, cv2.ml.ROW_SAMPLE, npaClassifications)           # train KNN object
-
-    return True                             # if we got here training was successful so return true
-# end function
 
 ###################################################################################################
 def detectCharsInPlates(listOfPossiblePlates):
@@ -92,6 +73,7 @@ def detectCharsInPlates(listOfPossiblePlates):
         # end if # show steps #####################################################################
 
         # increase size of plate image for easier viewing and char detection
+        possiblePlate.imgGrayscale = cv2.resize(possiblePlate.imgGrayscale, (0, 0), fx = 1.6, fy = 1.6)
         possiblePlate.imgThresh = cv2.resize(possiblePlate.imgThresh, (0, 0), fx = 1.6, fy = 1.6)
 
         # threshold again to eliminate any gray areas
@@ -207,7 +189,7 @@ def detectCharsInPlates(listOfPossiblePlates):
             cv2.imshow("9", imgContours)
         # end if # show steps #####################################################################
 
-        possiblePlate.strChars = recognizeCharsInPlate(possiblePlate.imgThresh, longestListOfMatchingCharsInPlate)
+        possiblePlate.strChars = recognizeCharsInPlate(possiblePlate, longestListOfMatchingCharsInPlate)
 
         if Main.showSteps == True: # show steps ###################################################
             print ("chars found in plate number " + str(intPlateCounter) + " = " + possiblePlate.strChars + ", click on any image and press a key to continue . . .")
@@ -251,9 +233,9 @@ def findPossibleCharsInPlate(imgGrayscale, imgThresh):
 # note that we are not (yet) comparing the char to other chars to look for a group
 def checkIfPossibleChar(possibleChar):
     if (possibleChar.intBoundingRectWidth > MIN_PIXEL_WIDTH and 
-        possibleChar.intBoundingRectHeight > MIN_PIXEL_HEIGHT and
-        (MIN_ASPECT_RATIO <= possibleChar.fltAspectRatio <= MAX_ASPECT_RATIO) and
-        (MIN_AREA <= possibleChar.intBoundingRectArea <= MAX_AREA)
+        possibleChar.intBoundingRectHeight > MIN_PIXEL_HEIGHT
+        #(MIN_ASPECT_RATIO <= possibleChar.fltAspectRatio <= MAX_ASPECT_RATIO) and
+        #(MIN_AREA <= possibleChar.intBoundingRectArea <= MAX_AREA)
         ):
         return True
     else:
@@ -401,8 +383,10 @@ def removeInnerOverlappingChars(listOfMatchingChars):
 
 ###################################################################################################
 # this is where we apply the actual char recognition
-def recognizeCharsInPlate(imgThresh, listOfMatchingChars):
+def recognizeCharsInPlate(possiblePlate, listOfMatchingChars):
     strChars = ""               # this will be the return value, the chars in the lic plate
+
+    imgThresh = possiblePlate.imgGrayscale
 
     height, width = imgThresh.shape
 
@@ -422,20 +406,20 @@ def recognizeCharsInPlate(imgThresh, listOfMatchingChars):
         imgROI = imgThresh[currentChar.intBoundingRectY : currentChar.intBoundingRectY + currentChar.intBoundingRectHeight,
                            currentChar.intBoundingRectX : currentChar.intBoundingRectX + currentChar.intBoundingRectWidth]
 
-        cv2.imshow("imgRoi", imgROI)
-        cv2.imwrite("letra.png", imgROI)
-        cv2.waitKey(0)
         # resize image, this is necessary for char recognition
         imgROIResized = cv2.resize(imgROI, (RESIZED_CHAR_IMAGE_WIDTH, RESIZED_CHAR_IMAGE_HEIGHT))           
         #cv2.imshow("imgROIResized", imgROIResized)
-        npaROIResized = imgROIResized.reshape((1, RESIZED_CHAR_IMAGE_WIDTH * RESIZED_CHAR_IMAGE_HEIGHT))        # flatten image into 1d numpy array
-        npaROIResized = np.float32(npaROIResized)               # convert from 1d numpy array of ints to 1d numpy array of floats
+        # npaROIResized = imgROIResized.reshape((1, RESIZED_CHAR_IMAGE_WIDTH * RESIZED_CHAR_IMAGE_HEIGHT))        # flatten image into 1d numpy array
+        # npaROIResized = np.float32(npaROIResized)               # convert from 1d numpy array of ints to 1d numpy array of floats
         #cv2.waitKey(0)
-        retval, npaResults, neigh_resp, dists = kNearest.findNearest(npaROIResized, k = 1)              # finally we can call findNearest !!!
+        imgROI_hog = np.float32([hog.compute(imgROIResized)])
+        predict_char = chr(svm.predict(imgROI_hog)[1][0][0])
 
-        strCurrentChar = str(chr(int(npaResults[0][0])))            # get character from results
+        #retval, npaResults, neigh_resp, dists = kNearest.findNearest(npaROIResized, k = 1)              # finally we can call findNearest !!!
 
-        strChars = strChars + strCurrentChar                        # append current char to full string
+        #strCurrentChar = str(chr(int(npaResults[0][0])))            # get character from results
+
+        strChars = strChars + predict_char                        # append current char to full string
 
     # end for
 
