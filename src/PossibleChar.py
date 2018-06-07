@@ -16,7 +16,8 @@ class PossibleChar:
 
         [intX, intY, intWidth, intHeight] = self.boundingRect
 
-        self.area = cv2.contourArea(_contour)
+        # Divide by zero
+        self.area = cv2.contourArea(_contour) + 0.0000001
         self.intBoundingRectX = intX
         self.intBoundingRectY = intY
         self.intBoundingRectWidth = intWidth
