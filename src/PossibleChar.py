@@ -9,12 +9,14 @@ class PossibleChar:
 
     # constructor #################################################################################
     def __init__(self, _contour):
+
         self.contour = _contour
 
         self.boundingRect = cv2.boundingRect(self.contour)
 
         [intX, intY, intWidth, intHeight] = self.boundingRect
 
+        self.area = cv2.contourArea(_contour)
         self.intBoundingRectX = intX
         self.intBoundingRectY = intY
         self.intBoundingRectWidth = intWidth

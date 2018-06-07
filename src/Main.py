@@ -18,7 +18,7 @@ SCALAR_YELLOW = (0.0, 255.0, 255.0)
 SCALAR_GREEN = (0.0, 255.0, 0.0)
 SCALAR_RED = (0.0, 0.0, 255.0)
 
-showSteps = True
+showSteps = False
 
 ###################################################################################################
 def recognize(imgOriginalScene):
@@ -28,6 +28,7 @@ def recognize(imgOriginalScene):
         os.system("pause")
         return
 
+    #imgOriginalScene = cv2.resize(imgOriginalScene, (1280, 720), interpolation = cv2.INTER_CUBIC)
     # Start plate recognition
     # Start benchmark
     benchTime = datetime.datetime.now()
@@ -80,8 +81,7 @@ def recognize(imgOriginalScene):
         # cv2.imwrite("imgOriginalScene.png", imgOriginalScene)
 
     # hold windows open until user presses a key
-    #cv2.waitKey(0)					
-
+    #cv2.waitKey(0)
     return licPlate.strChars
 
 def to_consoante(digit):
@@ -212,5 +212,5 @@ if __name__ == "__main__":
     #         print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number)   )
 
     # print ("Total of:", total_counts, "predicted correted:", count_rights)
-    recognize(cv2.imread("C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\track0145\\track0145[01].png"))
+    print(recognize(cv2.imread("11.png")))
     #main()
