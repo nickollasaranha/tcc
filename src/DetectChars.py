@@ -287,10 +287,6 @@ def recognizeCharsInPlate(possiblePlate, listOfMatchingChars):
     cv2.cvtColor(imgThresh, cv2.COLOR_GRAY2BGR, imgThreshColor)                     # make color version of threshold image so we can draw contours in color on it
 
     for currentChar in listOfMatchingChars:                                         # for each char in plate
-        pt1 = (currentChar.intBoundingRectX, currentChar.intBoundingRectY)
-        pt2 = ((currentChar.intBoundingRectX + currentChar.intBoundingRectWidth), (currentChar.intBoundingRectY + currentChar.intBoundingRectHeight))
-
-        cv2.rectangle(imgThreshColor, pt1, pt2, Main.SCALAR_GREEN, 2)           # draw green box around the char
 
         # crop char out of threshold image
         imgROI = imgThresh[currentChar.intBoundingRectY : currentChar.intBoundingRectY + currentChar.intBoundingRectHeight,
@@ -299,8 +295,10 @@ def recognizeCharsInPlate(possiblePlate, listOfMatchingChars):
         # resize image, this is necessary for char recognition
         imgROIResized = cv2.resize(imgROI, (RESIZED_CHAR_IMAGE_WIDTH, RESIZED_CHAR_IMAGE_HEIGHT))
         imgROI_hog = np.float32([hog.compute(imgROIResized)])
-
         predict_char = chr(svm.predict(imgROI_hog)[1][0][0])
+        print(predict_char)
+        cv2.imshow("imgROIResized", imgROIResized)
+        cv2.waitKey(0)
         # cv2.imshow("predicted", imgROIResized)
         # print(svm.predict(imgROI_hog))
         # cv2.waitKey(0)
