@@ -10,6 +10,7 @@ import Main
 import Preprocess
 import PossibleChar
 
+import threading
 # module level variables ##########################################################################
 img_shape = [24, 16]
 cell_size = (4, 4)  # h x w in pixels

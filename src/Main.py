@@ -109,6 +109,10 @@ def run(char_aspect_ratio_interval, plate_aspect_ratio_interval):
     time_worst = 0
     time_best = time.time()
 
+    # For single time running purposes
+    print(recognize(cv2.imread("12.png"), char_aspect_ratio_interval, plate_aspect_ratio_interval), time.time()-time_all)
+    return
+
     for folder in listdir(directory):
 
         tracks = [os.path.splitext(directory+folder+"\\"+track)[0] for track in listdir(directory+folder) if os.path.splitext(directory+folder+"\\"+track)[1]==".txt"]
@@ -137,7 +141,6 @@ def run(char_aspect_ratio_interval, plate_aspect_ratio_interval):
                     flag = False
 
             #print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number))
-    #print(recognize(cv2.imread("12.png")))
 
     result_image = 0 if total_images == 0 else float(positive_images)/float(total_images)
     result_tracks = 0 if total_tracks == 0 else float(positive_tracks)/float(total_tracks)
@@ -148,17 +151,18 @@ def run(char_aspect_ratio_interval, plate_aspect_ratio_interval):
 
 if __name__ == "__main__":
     
-    # this first text verify the aspect ratio of possible chars.
-    CHAR_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(11)]
-    PLATE_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(20, 101, 5)]
+    run([0.2, 0.8], [3.5, 6])
+    # # this first text verify the aspect ratio of possible chars.
+    # CHAR_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(11)]
+    # PLATE_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(20, 101, 5)]
 
-    # Char Aspect Ratio
-    for min_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
-        for max_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
-            if min_char_aspect_ratio>=max_char_aspect_ratio: continue
+    # # Char Aspect Ratio
+    # for min_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
+    #     for max_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
+    #         if min_char_aspect_ratio>=max_char_aspect_ratio: continue
 
-            # Plate Aspect Ratio
-            for min_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
-                for max_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
-                    if min_plate_aspect_ratio>=max_plate_aspect_ratio: continue
-                    run([min_char_aspect_ratio, max_char_aspect_ratio], [min_plate_aspect_ratio, max_plate_aspect_ratio])
+    #         # Plate Aspect Ratio
+    #         for min_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
+    #             for max_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
+    #                 if min_plate_aspect_ratio>=max_plate_aspect_ratio: continue
+    #                 run([min_char_aspect_ratio, max_char_aspect_ratio], [min_plate_aspect_ratio, max_plate_aspect_ratio])
