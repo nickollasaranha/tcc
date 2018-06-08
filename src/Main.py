@@ -9,7 +9,7 @@ from os import listdir
 import DetectChars
 import DetectPlates
 import PossiblePlate
-import datetime
+import time
 
 # module level variables ##########################################################################
 SCALAR_BLACK = (0.0, 0.0, 0.0)
@@ -18,6 +18,8 @@ SCALAR_YELLOW = (0.0, 255.0, 255.0)
 SCALAR_GREEN = (0.0, 255.0, 0.0)
 SCALAR_RED = (0.0, 0.0, 255.0)
 
+MIN_CHARS_PLATE = 5
+MAX_CHARS_PLATE = 7
 showSteps = False
 
 ###################################################################################################
@@ -31,52 +33,49 @@ def recognize(imgOriginalScene):
     #imgOriginalScene = cv2.resize(imgOriginalScene, (1280, 720), interpolation = cv2.INTER_CUBIC)
     # Start plate recognition
     # Start benchmark
-    benchTime = datetime.datetime.now()
+    #benchTime = datetime.datetime.now()
     listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene)
     #print ("Detect plates took ", datetime.datetime.now()-benchTime, " with ", len(listOfPossiblePlates), " possible plates.\n")
 
-    benchTime = datetime.datetime.now()
+    #benchTime = datetime.datetime.now()
     # detect chars in plates
     listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)
+
     #print ("Detect chars took ", datetime.datetime.now()-benchTime)
+    listOfPossiblePlates = [plate for plate in listOfPossiblePlates if (MIN_CHARS_PLATE <= len(plate.strChars) <= MAX_CHARS_PLATE)]
 
-    if len(listOfPossiblePlates) == 0:
-        # Inform the user we couldn't find plates
-        #print ("\nCouldn't find license plates.\n")
-        return ""
-    else:
-        # if we get in here list of possible plates has at leat one plate
-        # sort the list of possible plates in DESCENDING order (most number of chars to least number of chars)
-        listOfPossiblePlates.sort(key = lambda possiblePlate: len(possiblePlate.strChars), reverse = True)
+    if len(listOfPossiblePlates) == 0: return ""
 
-        # suppose the plate with the most recognized chars (the first plate in sorted by string length descending order) 
-        #is the actual plate
-        licPlate = listOfPossiblePlates[0]
+    # if we get in here list of possible plates has at leat one plate
+    # sort the list of possible plates in DESCENDING order (most number of chars to least number of chars)
+    listOfPossiblePlates.sort(key = lambda possiblePlate: len(possiblePlate.strChars), reverse = True)
 
-        # show crop of plate and threshold of plate
-        # cv2.imshow("imgPlate", licPlate.imgPlate)
-        # cv2.imshow("imgThresh", licPlate.imgThresh)
+    # suppose the plate with the most recognized chars (the first plate in sorted by string length descending order) 
+    # is the actual plate
+    licPlate = listOfPossiblePlates[0]
 
-        # Error is no license plates found
-        if len(licPlate.strChars) == 0:
-            #print ("\nno characters were detected\n\n")
-            return ""
+    # show crop of plate and threshold of plate
+    # cv2.imshow("imgPlate", licPlate.imgPlate)
+    # cv2.imshow("imgThresh", licPlate.imgThresh)
 
-        # draw red rectangle around plate
-        #drawRedRectangleAroundPlate(imgOriginalScene, licPlate)
+    # Error is no license plates found
+    if len(licPlate.strChars) == 0: return ""
 
-        # Get heuristic
-        licPlate.strChars = heuristic(licPlate.strChars)
+    # draw red rectangle around plate
+    #drawRedRectangleAroundPlate(imgOriginalScene, licPlate)
 
-        # write license plate text to std out
-        #print (licPlate.strChars)
+    # Get heuristic
+    licPlate.strChars = heuristic(licPlate.strChars)
 
-        # write license plate text on the image
-        #writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           
+    # write license plate text to std out
+    #print (licPlate.strChars)
 
-        # re-show scene and write image file
-        #cv2.imshow("imgOriginalScene", imgOriginalScene)
-        # cv2.imwrite("imgOriginalScene.png", imgOriginalScene)
+    # write license plate text on the image
+    #writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           
+
+    # re-show scene and write image file
+    #cv2.imshow("imgOriginalScene", imgOriginalScene)
+    # cv2.imwrite("imgOriginalScene.png", imgOriginalScene)
 
     # hold windows open until user presses a key
     #cv2.waitKey(0)
@@ -108,7 +107,8 @@ def to_digit(consoante):
         "J": "1",
         "U": "0",
         "P": "8",
-        "Q": "0"
+        "Q": "0",
+        "D": "0"
     }
     return switcher.get(consoante, str(consoante))
 
@@ -124,33 +124,53 @@ def heuristic(strChar):
 
 if __name__ == "__main__":
     
-    # directory = "C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\"
-    # text_extension = ".txt"
-    # image_extension = ".png"
-    # count_rights = 0
-    # total_counts = 0
+    directory = "C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\testing\\"
+    text_extension = ".txt"
+    image_extension = ".png"
 
-    # for folder in listdir(directory):
+    # Benchmark and results vars
+    total_tracks = 0
+    positive_tracks = 0
+    total_images = 0
+    positive_images = 0
 
-    #     tracks = [os.path.splitext(directory+folder+"\\"+track)[0] for track in listdir(directory+folder) if os.path.splitext(directory+folder+"\\"+track)[1]==".txt"]
-    #     print ("Working on folder", folder, "of", len(listdir(directory)))
-    #     flag = True
-    #     total_counts+=1
-    #     for track in tracks:
+    time_all = time.time()
+    time_worst = time.time()
+    time_best = time.time()+1000
 
-    #         file = open(track+text_extension)
-    #         predictedPlate = recognize(cv2.imread(track+image_extension))
+    for folder in listdir(directory):
 
-    #         # Get all chars position
-    #         lines = file.readlines()
+        tracks = [os.path.splitext(directory+folder+"\\"+track)[0] for track in listdir(directory+folder) if os.path.splitext(directory+folder+"\\"+track)[1]==".txt"]
+        #print ("Working on folder", folder, "of", len(listdir(directory)))
+        flag = True
+        total_tracks+=1
+        for track in tracks:
+            total_images+=1
+            file = open(track+text_extension)
+            time_now = time.time()
+            predictedPlate = recognize(cv2.imread(track+image_extension))
+            time_end = time.time()
 
-    #         # Get plate number
-    #         plate_number = re.sub("[-\nplate: ]", "", lines[6])
-    #         if plate_number == predictedPlate and flag:
-    #                 count_rights+=1
-    #                 flag = False
+            if (time_end-time_now) < time_best: time_best = (time_end-time_now)
+            if (time_end-time_now) > time_best: time_worst = (time_end-time_now)
 
-    #         print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number))
+            # Get all chars position
+            lines = file.readlines()
 
-    # print ("Total of:", total_counts, "predicted correted:", count_rights)
-    print(recognize(cv2.imread("track0146[01].png")))
+            # Get plate number
+            plate_number = re.sub("[-\nplate: ]", "", lines[6])
+            if plate_number == predictedPlate:
+                positive_images+=1
+                if flag:
+                    positive_tracks+=1
+                    flag = False
+
+            #print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number))
+
+    print ("Time running:", time.time()-time_all)
+    print ("Best time:", time_best)
+    print ("Worst time:", time_worst)
+    print ("Total pictures:", total_images)
+    print ("Total tracks:", total_tracks)
+    print ("Percentage correct total images:", float(positive_images)/float(total_images))
+    print ("Percentage correct total tracks:", float(positive_tracks)/float(total_tracks))

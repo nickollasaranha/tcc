@@ -211,11 +211,10 @@ def matchChars(possibleChar, possibleMatchingChar):
 def findListOfMatchingChars(possibleChar, listOfChars):
     # the purpose of this function is, given a possible char and a big list of possible chars,
     # find all chars in the big list that are a match for the single possible char, and return those matching chars as a list
-
     return [possibleMatchingChar for possibleMatchingChar in listOfChars if matchChars(possibleChar, possibleMatchingChar)]
 
 ###################################################################################################
-# use Pythagorean theorem to calculate distance between two chars
+# Euclidian distance
 def distanceBetweenChars(firstChar, secondChar):
     intX = abs(firstChar.intCenterX - secondChar.intCenterX)
     intY = abs(firstChar.intCenterY - secondChar.intCenterY)
@@ -296,9 +295,9 @@ def recognizeCharsInPlate(possiblePlate, listOfMatchingChars):
         imgROIResized = cv2.resize(imgROI, (RESIZED_CHAR_IMAGE_WIDTH, RESIZED_CHAR_IMAGE_HEIGHT))
         imgROI_hog = np.float32([hog.compute(imgROIResized)])
         predict_char = chr(svm.predict(imgROI_hog)[1][0][0])
-        print(predict_char)
-        cv2.imshow("imgROIResized", imgROIResized)
-        cv2.waitKey(0)
+        # print(predict_char)
+        # cv2.imshow("imgROIResized", imgROIResized)
+        # cv2.waitKey(0)
         # cv2.imshow("predicted", imgROIResized)
         # print(svm.predict(imgROI_hog))
         # cv2.waitKey(0)
