@@ -23,10 +23,9 @@ def drawList(imgLike, lista):
     contours = [possibleChar.contour for possibleChar in lista]
     cv2.drawContours(canvas, contours, -1, Main.SCALAR_WHITE)
 
-    cv2.imshow("Possible Chars", canvas)
-    cv2.waitKey(0)
+    # cv2.imshow("Possible Chars", canvas)
+    # cv2.waitKey(0)
 
-###################################################################################################
 def detectPlatesInScene(imgOriginalScene):
     listOfPossiblePlates = []
 
@@ -43,7 +42,7 @@ def detectPlatesInScene(imgOriginalScene):
 
     # find all possible chars in the scene,
     # this function first finds all contours, then only includes contours that could be chars (without comparison to other chars yet)
-    #benchTime = datetime.datetime.now()
+    benchTime = datetime.datetime.now()
     listOfPossibleCharsInScene = findPossibleCharsInScene(imgThreshScene)
     #drawList(imgThreshScene, listOfPossibleCharsInScene)
     # This will print all possible chars found
@@ -52,19 +51,18 @@ def detectPlatesInScene(imgOriginalScene):
 
     # given a list of all possible chars, find groups of matching chars
     # in the next steps each group of matching chars will attempt to be recognized as a plate
-    #benchTime = datetime.datetime.now()
-    listOfListsOfMatchingCharsInScene = DetectChars.findListOfListsOfMatchingChars(listOfPossibleCharsInScene)
+    benchTime = datetime.datetime.now()
+    listOfListsOfMatchingCharsInScene = DetectChars.groupMatchingChars(listOfPossibleCharsInScene)
 
-    #print ("findListOfListsOfMatchingChars took", datetime.datetime.now()-benchTime, " with ", len(listOfListsOfMatchingCharsInScene), " possible lists.\n")
+    #print ("GroupMatchingChars took", datetime.datetime.now()-benchTime, " with ", len(listOfListsOfMatchingCharsInScene), " possible lists.\n")
 
     # Attempt to attach plate for each group of matching chars.
     for listOfMatchingChars in (listOfListsOfMatchingCharsInScene):
-        #drawList(imgThreshScene, listOfMatchingChars)
+        drawList(imgThreshScene, listOfMatchingChars)
         possiblePlate = extractPlate(imgOriginalScene, listOfMatchingChars)
 
-        if possiblePlate.imgPlate is not None:
-            if PLATE_DIMENSION_FACTOR[0] <= possiblePlate.proportion <= PLATE_DIMENSION_FACTOR[1]:
-                listOfPossiblePlates.append(possiblePlate)
+        if possiblePlate.imgPlate is not None and PLATE_DIMENSION_FACTOR[0] <= possiblePlate.proportion <= PLATE_DIMENSION_FACTOR[1]:
+            listOfPossiblePlates.append(possiblePlate)
 
     return listOfPossiblePlates
 
@@ -112,11 +110,14 @@ def extractPlate(imgOriginal, listOfMatchingChars):
     # get the rotation matrix for our calculated correction angle
     rotationMatrix = cv2.getRotationMatrix2D(tuple(ptPlateCenter), fltCorrectionAngleInDeg, 1.0)
 
-    height, width, numChannels = imgOriginal.shape      # unpack original image width and height
+    # unpack original image width and height
+    height, width, numChannels = imgOriginal.shape
 
-    imgRotated = cv2.warpAffine(imgOriginal, rotationMatrix, (width, height))       # rotate the entire image
+    # rotate the entire image
+    imgRotated = cv2.warpAffine(imgOriginal, rotationMatrix, (width, height))
     imgCropped = cv2.getRectSubPix(imgRotated, (intPlateWidth, intPlateHeight), tuple(ptPlateCenter))
 
-    possiblePlate.imgPlate = imgCropped         # copy the cropped plate image into the applicable member variable of the possible plate
+    # copy the cropped plate image into the applicable member variable of the possible plate
+    possiblePlate.imgPlate = imgCropped
     possiblePlate.proportion = imgCropped.shape[1]/imgCropped.shape[0]
     return possiblePlate

@@ -5,11 +5,10 @@ import numpy as np
 import math
 import random
 import datetime
+
 import Main
 import Preprocess
 import PossibleChar
-from multiprocessing import Pool
-from functools import partial
 
 # module level variables ##########################################################################
 img_shape = [24, 16]
@@ -45,14 +44,13 @@ MAX_CHANGE_IN_HEIGHT = 0.2
 MAX_ANGLE_BETWEEN_CHARS = 12.0
 
 # other constants
-MIN_NUMBER_OF_MATCHING_CHARS = 5
+MIN_NUMBER_OF_MATCHING_CHARS = 4
 
 RESIZED_CHAR_IMAGE_WIDTH = 16
 RESIZED_CHAR_IMAGE_HEIGHT = 24
 
 MIN_CONTOUR_AREA = 50
 
-###################################################################################################
 def detectCharsInPlates(listOfPossiblePlates):
     intPlateCounter = 0
     imgContours = None
@@ -79,13 +77,13 @@ def detectCharsInPlates(listOfPossiblePlates):
         listOfPossibleCharsInPlate = findPossibleCharsInPlate(possiblePlate.imgGrayscale, possiblePlate.imgThresh)
 
         # given a list of all possible chars, find groups of matching chars within the plate
-        listOfListsOfMatchingCharsInPlate = findListOfListsOfMatchingChars(listOfPossibleCharsInPlate)
+        listOfListsOfMatchingCharsInPlate = groupMatchingChars(listOfPossibleCharsInPlate)
 
         # if no groups of matching chars were found in the plate
         if (len(listOfListsOfMatchingCharsInPlate) == 0):
 
             possiblePlate.strChars = ""
-            continue						# go back to top of for loop
+            continue                        # go back to top of for loop
         # end if
 
         for i in range(0, len(listOfListsOfMatchingCharsInPlate)):                              # within each list of matching chars
@@ -113,9 +111,7 @@ def detectCharsInPlates(listOfPossiblePlates):
     # end of big for loop that takes up most of the function
 
     return listOfPossiblePlates
-# end function
 
-###################################################################################################
 def findPossibleCharsInPlate(imgGrayscale, imgThresh):
     listOfPossibleChars = []                        # this will be the return value
     contours = []
@@ -124,18 +120,10 @@ def findPossibleCharsInPlate(imgGrayscale, imgThresh):
     # find all contours in plate
     imgContours, contours, npaHierarchy = cv2.findContours(imgThreshCopy, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
     return [PossibleChar.PossibleChar(cnt) for cnt in contours if checkIfPossibleChar(PossibleChar.PossibleChar(cnt))]
-# end function
 
-###################################################################################################
 # this function is a 'first pass' that does a rough check on a contour to see if it could be a char,
 # note that we are not (yet) comparing the char to other chars to look for a group
 def checkIfPossibleChar(possibleChar):
-
-    # print (possibleChar.intBoundingRectWidth, possibleChar.intBoundingRectHeight, possibleChar.intBoundingRectArea, possibleChar.fltAspectRatio)
-    # imgContours = np.zeros((1080, 1920, 3), np.uint8)
-    # cv2.drawContours(imgContours, possibleChar.contour, -1, Main.SCALAR_WHITE)
-    # cv2.imshow("imgCountours", imgContours)
-    # cv2.waitKey(0)
 
     if (possibleChar.intBoundingRectWidth > MIN_PIXEL_WIDTH and 
         possibleChar.intBoundingRectHeight > MIN_PIXEL_HEIGHT and
@@ -148,49 +136,32 @@ def checkIfPossibleChar(possibleChar):
         #print ("no")
         return False
 
-###################################################################################################
 # with this function, we start off with all the possible chars in one big list
 # the purpose of this function is to re-arrange the one big list of chars into a list of lists of matching chars,
 # note that chars that are not found to be in a group of matches do not need to be considered further
-def findListOfListsOfMatchingChars(listOfPossibleChars):
+def groupMatchingChars(listOfPossibleChars):
 
-    # this will be the return value
+    visited = set()
     listOfListsOfMatchingChars = []
 
-    # for each possible char in the one big list of chars
     for possibleChar in listOfPossibleChars:
 
-        # find all chars in the big list that match the current char
-        listOfMatchingChars = [possibleChar] + findListOfMatchingChars(possibleChar, listOfPossibleChars)
+        if possibleChar in visited: continue
 
-        # if current possible list of matching chars is not long enough to constitute a possible plate
-        # jump back to the top of the for loop and try again with next char, note that it's not necessary
-        # to save the list in any way since it did not have enough chars to be a possible plate
-        if len(listOfMatchingChars) < MIN_NUMBER_OF_MATCHING_CHARS: continue
+        # find all matching chars
+        listOfMatchingChars = [possibleChar] + [char for char in listOfPossibleChars if ((char not in visited) and (matchChars(possibleChar, char)))]
 
-        # if we get here, the current list passed test as a "group" or "cluster" of matching chars
-        # so add to our list of lists of matching chars
-        listOfListsOfMatchingChars.append(listOfMatchingChars)
+        # add to visited
+        visited.update(listOfMatchingChars)
 
-        # remove the current list of matching chars from the big list so we don't use those same chars twice,
-        # make sure to make a new big list for this since we don't want to change the original big list
-        listOfPossibleCharsWithCurrentMatchesRemoved = list(set(listOfPossibleChars) - set(listOfMatchingChars))
-
-        # recursive call
-        recursiveListOfListsOfMatchingChars = findListOfListsOfMatchingChars(listOfPossibleCharsWithCurrentMatchesRemoved)      
-        # for each list of matching chars found by recursive call
-        # add to our original list of lists of matching chars
-        # end for
-        for recursiveListOfMatchingChars in recursiveListOfListsOfMatchingChars:
-            listOfListsOfMatchingChars.append(recursiveListOfMatchingChars)
-
-        break
+        # verify if valid
+        if len(listOfMatchingChars) >= MIN_NUMBER_OF_MATCHING_CHARS: 
+            listOfListsOfMatchingChars.append(listOfMatchingChars)
 
     return listOfListsOfMatchingChars
-# end function
 
+# Verify if a char is matching with other, excluding itself
 def matchChars(possibleChar, possibleMatchingChar):
-
     if possibleChar == possibleMatchingChar: return False
 
     fltDistanceBetweenChars = distanceBetweenChars(possibleChar, possibleMatchingChar)
@@ -208,22 +179,12 @@ def matchChars(possibleChar, possibleMatchingChar):
 
     return False
 
-def findListOfMatchingChars(possibleChar, listOfChars):
-    # the purpose of this function is, given a possible char and a big list of possible chars,
-    # find all chars in the big list that are a match for the single possible char, and return those matching chars as a list
-    return [possibleMatchingChar for possibleMatchingChar in listOfChars if matchChars(possibleChar, possibleMatchingChar)]
-
-###################################################################################################
-# Euclidian distance
 def distanceBetweenChars(firstChar, secondChar):
     intX = abs(firstChar.intCenterX - secondChar.intCenterX)
     intY = abs(firstChar.intCenterY - secondChar.intCenterY)
 
     return math.sqrt((intX ** 2) + (intY ** 2))
-# end function
 
-###################################################################################################
-# use basic trigonometry (SOH CAH TOA) to calculate angle between chars
 def angleBetweenChars(firstChar, secondChar):
     fltAdj = float(abs(firstChar.intCenterX - secondChar.intCenterX))
     fltOpp = float(abs(firstChar.intCenterY - secondChar.intCenterY))
@@ -237,55 +198,39 @@ def angleBetweenChars(firstChar, secondChar):
     fltAngleInDeg = fltAngleInRad * (180.0 / math.pi)       # calculate angle in degrees
 
     return fltAngleInDeg
-# end function
 
-###################################################################################################
 # if we have two chars overlapping or to close to each other to possibly be separate chars, remove the inner (smaller) char,
 # this is to prevent including the same char twice if two contours are found for the same char,
 # for example for the letter 'O' both the inner ring and the outer ring may be found as contours, but we should only include the char once
 def removeInnerOverlappingChars(listOfMatchingChars):
-    listOfMatchingCharsWithInnerCharRemoved = list(listOfMatchingChars)                # this will be the return value
+
+    listOfMatchingCharsWithInnerCharRemoved = list(listOfMatchingChars)
 
     for currentChar in listOfMatchingChars:
         for otherChar in listOfMatchingChars:
-            if currentChar != otherChar:        # if current char and other char are not the same char . . .
-                                                                            # if current char and other char have center points at almost the same location . . .
+            if currentChar != otherChar:
+                # if current char and other char have center points at almost the same location                                                                
                 if distanceBetweenChars(currentChar, otherChar) < (currentChar.fltDiagonalSize * MIN_DIAG_SIZE_MULTIPLE_AWAY):
-                                # if we get in here we have found overlapping chars
-                                # next we identify which char is smaller, then if that char was not already removed on a previous pass, remove it
-                    if currentChar.intBoundingRectArea < otherChar.intBoundingRectArea:         # if current char is smaller than other char
-                        if currentChar in listOfMatchingCharsWithInnerCharRemoved:              # if current char was not already removed on a previous pass . . .
-                            listOfMatchingCharsWithInnerCharRemoved.remove(currentChar)         # then remove current char
-                        # end if
-                    else:                                                                       # else if other char is smaller than current char
-                        if otherChar in listOfMatchingCharsWithInnerCharRemoved:                # if other char was not already removed on a previous pass . . .
-                            listOfMatchingCharsWithInnerCharRemoved.remove(otherChar)           # then remove other char
-                        # end if
-                    # end if
-                # end if
-            # end if
-        # end for
-    # end for
+                    # if we get in here we have found overlapping chars
+                    # next we identify which char is smaller, then if that char was not already removed on a previous pass, remove it
+                    if currentChar.intBoundingRectArea < otherChar.intBoundingRectArea:
+                        if currentChar in listOfMatchingCharsWithInnerCharRemoved:
+                            listOfMatchingCharsWithInnerCharRemoved.remove(currentChar)
+                    elif otherChar in listOfMatchingCharsWithInnerCharRemoved:               
+                            listOfMatchingCharsWithInnerCharRemoved.remove(otherChar)
 
     return listOfMatchingCharsWithInnerCharRemoved
-# end function
 
-###################################################################################################
 # this is where we apply the actual char recognition
 def recognizeCharsInPlate(possiblePlate, listOfMatchingChars):
-    strChars = ""               # this will be the return value, the chars in the lic plate
+    strChars = ""
 
     imgThresh = possiblePlate.imgGrayscale
 
-    height, width = imgThresh.shape
+    # sort chars from left to right
+    listOfMatchingChars.sort(key = lambda matchingChar: matchingChar.intCenterX)
 
-    imgThreshColor = np.zeros((height, width, 3), np.uint8)
-
-    listOfMatchingChars.sort(key = lambda matchingChar: matchingChar.intCenterX)        # sort chars from left to right
-
-    cv2.cvtColor(imgThresh, cv2.COLOR_GRAY2BGR, imgThreshColor)                     # make color version of threshold image so we can draw contours in color on it
-
-    for currentChar in listOfMatchingChars:                                         # for each char in plate
+    for currentChar in listOfMatchingChars:
 
         # crop char out of threshold image
         imgROI = imgThresh[currentChar.intBoundingRectY : currentChar.intBoundingRectY + currentChar.intBoundingRectHeight,
@@ -303,8 +248,6 @@ def recognizeCharsInPlate(possiblePlate, listOfMatchingChars):
         # cv2.waitKey(0)
 
         # append character
-        strChars = strChars + predict_char
-    # end for
+        strChars += predict_char
 
     return strChars
-# end function
