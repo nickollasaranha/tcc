@@ -23,7 +23,7 @@ MAX_CHARS_PLATE = 7
 showSteps = False
 
 ###################################################################################################
-def recognize(imgOriginalScene):
+def recognize(imgOriginalScene, char_aspect_ratio_interval, plate_aspect_ratio_interval):
 
     if imgOriginalScene is None:
         print ("\nerror: Couldn't load image file.\n\n")
@@ -32,10 +32,10 @@ def recognize(imgOriginalScene):
 
     #imgOriginalScene = cv2.resize(imgOriginalScene, (1280, 720), interpolation = cv2.INTER_CUBIC)
     # Start plate recognition
-    listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene)
+    listOfPossiblePlates = DetectPlates.detectPlatesInScene(imgOriginalScene, char_aspect_ratio_interval, plate_aspect_ratio_interval)
 
     # detect chars in plates
-    listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)
+    listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates, char_aspect_ratio_interval)
 
     listOfPossiblePlates = [plate for plate in listOfPossiblePlates if MIN_CHARS_PLATE <= len(plate.strChars) <= MAX_CHARS_PLATE]
     if len(listOfPossiblePlates) == 0: return ""
@@ -93,8 +93,8 @@ def heuristic(strChar):
 
     return "".join(consoantes+numeros)
 
-if __name__ == "__main__":
-    
+def run(char_aspect_ratio_interval, plate_aspect_ratio_interval):
+
     directory = "C:\\Users\\Nickollas Aranha\\Documents\\tcc\\database\\training\\"
     text_extension = ".txt"
     image_extension = ".png"
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     positive_images = 0
 
     time_all = time.time()
-    time_worst = time.time()
+    time_worst = 0
     time_best = time.time()
 
     for folder in listdir(directory):
@@ -119,7 +119,7 @@ if __name__ == "__main__":
             total_images+=1
             file = open(track+text_extension)
             time_now = time.time()
-            predictedPlate = recognize(cv2.imread(track+image_extension))
+            predictedPlate = recognize(cv2.imread(track+image_extension), char_aspect_ratio_interval, plate_aspect_ratio_interval)
             time_end = time.time()
 
             if (time_end-time_now) < time_best: time_best = (time_end-time_now)
@@ -137,19 +137,28 @@ if __name__ == "__main__":
                     flag = False
 
             #print ("Track", track, "predictedPlate:", predictedPlate, "correct:", "".join(plate_number))
-    #print(recognize(cv2.imread("12.png")))        
-    print ("Time running:", time.time()-time_all)
-    print ("Best time:", time_best)
-    print ("Worst time:", time_worst)
-    print ("Total pictures:", total_images)
-    print ("Total tracks:", total_tracks)
+    #print(recognize(cv2.imread("12.png")))
 
-    if total_images == 0:
-        print ("Percentage correct total images: 0")
-    else:
-        print ("Percentage correct total images:", float(positive_images)/float(total_images))
+    result_image = 0 if total_images == 0 else float(positive_images)/float(total_images)
+    result_tracks = 0 if total_tracks == 0 else float(positive_tracks)/float(total_tracks)
 
-    if total_tracks == 0:
-        print ("Percentage correct total tracks: 0")
-    else:
-        print ("Percentage correct total tracks:", float(positive_tracks)/float(total_tracks))
+    # print header and info below
+    print ("Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks")
+    print (plate_aspect_ratio_interval[0], ";", plate_aspect_ratio_interval[1], ";", char_aspect_ratio_interval[0], ";", char_aspect_ratio_interval[1], ";", time.time()-time_all, ";", time_best, ";", time_worst, ";", total_images, ";", total_tracks, ";", result_image, ";", result_tracks)
+
+if __name__ == "__main__":
+    
+    # this first text verify the aspect ratio of possible chars.
+    CHAR_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(11)]
+    PLATE_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(20, 101, 5)]
+
+    # Char Aspect Ratio
+    for min_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
+        for max_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
+            if min_char_aspect_ratio>=max_char_aspect_ratio: continue
+
+            # Plate Aspect Ratio
+            for min_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
+                for max_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
+                    if min_plate_aspect_ratio>=max_plate_aspect_ratio: continue
+                    run([min_char_aspect_ratio, max_char_aspect_ratio], [min_plate_aspect_ratio, max_plate_aspect_ratio])

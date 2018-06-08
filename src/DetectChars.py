@@ -30,9 +30,6 @@ svm = cv2.ml.SVM_load("svm.dat")
 MIN_PIXEL_WIDTH = 2
 MIN_PIXEL_HEIGHT = 8
 
-MIN_ASPECT_RATIO = 0.2
-MAX_ASPECT_RATIO = 0.8
-
 # constants for comparing two chars
 MIN_DIAG_SIZE_MULTIPLE_AWAY = 0.3
 MAX_DIAG_SIZE_MULTIPLE_AWAY = 5.0
@@ -51,7 +48,7 @@ RESIZED_CHAR_IMAGE_HEIGHT = 24
 
 MIN_CONTOUR_AREA = 50
 
-def detectCharsInPlates(listOfPossiblePlates):
+def detectCharsInPlates(listOfPossiblePlates, char_aspect_ratio_interval):
     intPlateCounter = 0
     imgContours = None
     contours = []
@@ -74,7 +71,7 @@ def detectCharsInPlates(listOfPossiblePlates):
 
         # find all possible chars in the plate,
         # this function first finds all contours, then only includes contours that could be chars (without comparison to other chars yet)
-        listOfPossibleCharsInPlate = findPossibleCharsInPlate(possiblePlate.imgGrayscale, possiblePlate.imgThresh)
+        listOfPossibleCharsInPlate = findPossibleCharsInPlate(possiblePlate.imgGrayscale, possiblePlate.imgThresh, char_aspect_ratio_interval)
 
         # given a list of all possible chars, find groups of matching chars within the plate
         listOfListsOfMatchingCharsInPlate = groupMatchingChars(listOfPossibleCharsInPlate)
@@ -112,23 +109,23 @@ def detectCharsInPlates(listOfPossiblePlates):
 
     return listOfPossiblePlates
 
-def findPossibleCharsInPlate(imgGrayscale, imgThresh):
+def findPossibleCharsInPlate(imgGrayscale, imgThresh, char_aspect_ratio_interval):
     listOfPossibleChars = []                        # this will be the return value
     contours = []
     imgThreshCopy = imgThresh.copy()
 
     # find all contours in plate
     imgContours, contours, npaHierarchy = cv2.findContours(imgThreshCopy, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-    return [PossibleChar.PossibleChar(cnt) for cnt in contours if checkIfPossibleChar(PossibleChar.PossibleChar(cnt))]
+    return [PossibleChar.PossibleChar(cnt) for cnt in contours if checkIfPossibleChar(PossibleChar.PossibleChar(cnt), char_aspect_ratio_interval)]
 
 # this function is a 'first pass' that does a rough check on a contour to see if it could be a char,
 # note that we are not (yet) comparing the char to other chars to look for a group
-def checkIfPossibleChar(possibleChar):
+def checkIfPossibleChar(possibleChar, char_aspect_ratio_interval):
 
     if (possibleChar.intBoundingRectWidth > MIN_PIXEL_WIDTH and 
         possibleChar.intBoundingRectHeight > MIN_PIXEL_HEIGHT and
         possibleChar.intBoundingRectArea > MIN_CONTOUR_AREA and
-        (MIN_ASPECT_RATIO <= possibleChar.fltAspectRatio <= MAX_ASPECT_RATIO)
+        (char_aspect_ratio_interval[0] <= possibleChar.fltAspectRatio <= char_aspect_ratio_interval[1])
         ):
         #print ("ok")
         return True

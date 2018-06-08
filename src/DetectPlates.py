@@ -15,7 +15,6 @@ import PossibleChar
 # module level variables ##########################################################################
 PLATE_WIDTH_PADDING_FACTOR = 1.1
 PLATE_HEIGHT_PADDING_FACTOR = 1.1
-PLATE_DIMENSION_FACTOR = [3.5, 6]
 
 def drawList(imgLike, lista):
 
@@ -26,7 +25,7 @@ def drawList(imgLike, lista):
     # cv2.imshow("Possible Chars", canvas)
     # cv2.waitKey(0)
 
-def detectPlatesInScene(imgOriginalScene):
+def detectPlatesInScene(imgOriginalScene, char_aspect_ratio_interval, plate_aspect_ratio_interval):
     listOfPossiblePlates = []
 
     height, width, numChannels = imgOriginalScene.shape
@@ -43,7 +42,7 @@ def detectPlatesInScene(imgOriginalScene):
     # find all possible chars in the scene,
     # this function first finds all contours, then only includes contours that could be chars (without comparison to other chars yet)
     benchTime = datetime.datetime.now()
-    listOfPossibleCharsInScene = findPossibleCharsInScene(imgThreshScene)
+    listOfPossibleCharsInScene = findPossibleCharsInScene(imgThreshScene, char_aspect_ratio_interval)
     #drawList(imgThreshScene, listOfPossibleCharsInScene)
     # This will print all possible chars found
 
@@ -61,16 +60,16 @@ def detectPlatesInScene(imgOriginalScene):
         drawList(imgThreshScene, listOfMatchingChars)
         possiblePlate = extractPlate(imgOriginalScene, listOfMatchingChars)
 
-        if possiblePlate.imgPlate is not None and PLATE_DIMENSION_FACTOR[0] <= possiblePlate.proportion <= PLATE_DIMENSION_FACTOR[1]:
+        if possiblePlate.imgPlate is not None and plate_aspect_ratio_interval[0] <= possiblePlate.proportion <= plate_aspect_ratio_interval[1]:
             listOfPossiblePlates.append(possiblePlate)
 
     return listOfPossiblePlates
 
-def findPossibleCharsInScene(imgThresh):
+def findPossibleCharsInScene(imgThresh, char_aspect_ratio_interval):
 
     imgThreshCopy = imgThresh.copy()
     _, contours, _ = cv2.findContours(imgThreshCopy, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    return [PossibleChar.PossibleChar(contour) for contour in contours if DetectChars.checkIfPossibleChar(PossibleChar.PossibleChar(contour))]
+    return [PossibleChar.PossibleChar(contour) for contour in contours if DetectChars.checkIfPossibleChar(PossibleChar.PossibleChar(contour), char_aspect_ratio_interval)]
 
 def extractPlate(imgOriginal, listOfMatchingChars):
     possiblePlate = PossiblePlate.PossiblePlate()           # this will be the return value
