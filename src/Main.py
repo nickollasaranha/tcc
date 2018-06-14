@@ -110,8 +110,8 @@ def run(char_aspect_ratio_interval, plate_aspect_ratio_interval):
     time_best = time.time()
 
     # For single time running purposes
-    print(recognize(cv2.imread("12.png"), char_aspect_ratio_interval, plate_aspect_ratio_interval), time.time()-time_all)
-    return
+    # print(recognize(cv2.imread("12.png"), char_aspect_ratio_interval, plate_aspect_ratio_interval), time.time()-time_all)
+    # return
 
     for folder in listdir(directory):
 
@@ -148,21 +148,3 @@ def run(char_aspect_ratio_interval, plate_aspect_ratio_interval):
     # print header and info below
     print ("Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks")
     print (plate_aspect_ratio_interval[0], ";", plate_aspect_ratio_interval[1], ";", char_aspect_ratio_interval[0], ";", char_aspect_ratio_interval[1], ";", time.time()-time_all, ";", time_best, ";", time_worst, ";", total_images, ";", total_tracks, ";", result_image, ";", result_tracks)
-
-if __name__ == "__main__":
-    
-    run([0.2, 0.8], [3.5, 6])
-    # # this first text verify the aspect ratio of possible chars.
-    # CHAR_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(11)]
-    # PLATE_ASPECT_RATIO_INTERVAL = [float(x)/float(10) for x in range(20, 101, 5)]
-
-    # # Char Aspect Ratio
-    # for min_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
-    #     for max_char_aspect_ratio in CHAR_ASPECT_RATIO_INTERVAL:
-    #         if min_char_aspect_ratio>=max_char_aspect_ratio: continue
-
-    #         # Plate Aspect Ratio
-    #         for min_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
-    #             for max_plate_aspect_ratio in PLATE_ASPECT_RATIO_INTERVAL:
-    #                 if min_plate_aspect_ratio>=max_plate_aspect_ratio: continue
-    #                 run([min_char_aspect_ratio, max_char_aspect_ratio], [min_plate_aspect_ratio, max_plate_aspect_ratio])

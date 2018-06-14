@@ -1,0 +1,816 @@
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 2.5 ; 0.7 ; 0.8 ; 199.45344281196594 ; 0.12417721748352051 ; 0.15358972549438477 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 3.0 ; 0.7 ; 0.8 ; 198.89668440818787 ; 0.11968135833740234 ; 0.15558409690856934 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 3.5 ; 0.7 ; 0.8 ; 200.05490255355835 ; 0.11967992782592773 ; 0.17553043365478516 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 4.0 ; 0.7 ; 0.8 ; 206.52494168281555 ; 0.1216742992401123 ; 0.1880054473876953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 4.5 ; 0.7 ; 0.8 ; 204.34545159339905 ; 0.12466621398925781 ; 0.16956067085266113 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 5.0 ; 0.7 ; 0.8 ; 203.50293827056885 ; 0.12366914749145508 ; 0.20546555519104004 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 5.5 ; 0.7 ; 0.8 ; 203.3495888710022 ; 0.12517666816711426 ; 0.1521010398864746 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 6.0 ; 0.7 ; 0.8 ; 198.94558262825012 ; 0.11469292640686035 ; 0.17054367065429688 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 6.5 ; 0.7 ; 0.8 ; 194.2621021270752 ; 0.12467050552368164 ; 0.14261817932128906 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 7.0 ; 0.7 ; 0.8 ; 197.22405552864075 ; 0.12067747116088867 ; 0.17453312873840332 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 7.5 ; 0.7 ; 0.8 ; 197.01017379760742 ; 0.12181401252746582 ; 0.16156792640686035 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 8.0 ; 0.7 ; 0.8 ; 195.19621682167053 ; 0.1186826229095459 ; 0.16954612731933594 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 8.5 ; 0.7 ; 0.8 ; 196.7429211139679 ; 0.1186826229095459 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 9.0 ; 0.7 ; 0.8 ; 196.23819708824158 ; 0.12067747116088867 ; 0.16755223274230957 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 9.5 ; 0.7 ; 0.8 ; 194.39998960494995 ; 0.11469292640686035 ; 0.1575784683227539 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 10.0 ; 0.7 ; 0.8 ; 196.2165470123291 ; 0.12267255783081055 ; 0.1600782871246338 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 3.0 ; 0.7 ; 0.8 ; 195.89630150794983 ; 0.11668801307678223 ; 0.15358877182006836 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 3.5 ; 0.7 ; 0.8 ; 194.48953223228455 ; 0.11967968940734863 ; 0.16356253623962402 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 4.0 ; 0.7 ; 0.8 ; 195.931325674057 ; 0.11668777465820312 ; 0.1825122833251953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 4.5 ; 0.7 ; 0.8 ; 196.3450722694397 ; 0.11369609832763672 ; 0.16256499290466309 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 5.0 ; 0.7 ; 0.8 ; 196.0416123867035 ; 0.11768412590026855 ; 0.14760518074035645 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 5.5 ; 0.7 ; 0.8 ; 196.35789513587952 ; 0.11768531799316406 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 6.0 ; 0.7 ; 0.8 ; 197.5864818096161 ; 0.11469268798828125 ; 0.15377569198608398 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 6.5 ; 0.7 ; 0.8 ; 196.43895602226257 ; 0.11369657516479492 ; 0.15558385848999023 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 7.0 ; 0.7 ; 0.8 ; 197.03502321243286 ; 0.11768531799316406 ; 0.15658164024353027 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 7.5 ; 0.7 ; 0.8 ; 197.36088490486145 ; 0.1186826229095459 ; 0.1625654697418213 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 8.0 ; 0.7 ; 0.8 ; 196.528235912323 ; 0.11968016624450684 ; 0.1605701446533203 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 8.5 ; 0.7 ; 0.8 ; 197.60267758369446 ; 0.12267160415649414 ; 0.1765272617340088 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 9.0 ; 0.7 ; 0.8 ; 198.64409518241882 ; 0.11212491989135742 ; 0.16057038307189941 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 9.5 ; 0.7 ; 0.8 ; 194.0250928401947 ; 0.12267208099365234 ; 0.1515944004058838 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 10.0 ; 0.7 ; 0.8 ; 195.31529545783997 ; 0.11668753623962402 ; 0.16655468940734863 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 3.5 ; 0.7 ; 0.8 ; 195.2105941772461 ; 0.11369609832763672 ; 0.15957283973693848 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 4.0 ; 0.7 ; 0.8 ; 195.17781114578247 ; 0.11768555641174316 ; 0.1715412139892578 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 4.5 ; 0.7 ; 0.8 ; 194.26066899299622 ; 0.12366938591003418 ; 0.14960026741027832 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 5.0 ; 0.7 ; 0.8 ; 196.72269439697266 ; 0.11170125007629395 ; 0.1545865535736084 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 5.5 ; 0.7 ; 0.8 ; 193.2725248336792 ; 0.1186823844909668 ; 0.15558719635009766 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 6.0 ; 0.7 ; 0.8 ; 193.94261693954468 ; 0.11070394515991211 ; 0.15358924865722656 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 6.5 ; 0.7 ; 0.8 ; 194.48976755142212 ; 0.11967968940734863 ; 0.14261817932128906 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 7.0 ; 0.7 ; 0.8 ; 195.04217743873596 ; 0.11170053482055664 ; 0.18051743507385254 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 7.5 ; 0.7 ; 0.8 ; 194.78453016281128 ; 0.11768531799316406 ; 0.1515944004058838 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 8.0 ; 0.7 ; 0.8 ; 194.52461171150208 ; 0.1231224536895752 ; 0.18450641632080078 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 8.5 ; 0.7 ; 0.8 ; 195.75760126113892 ; 0.1136941909790039 ; 0.16356301307678223 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 9.0 ; 0.7 ; 0.8 ; 195.63883185386658 ; 0.11170101165771484 ; 0.17054390907287598 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 9.5 ; 0.7 ; 0.8 ; 197.42006993293762 ; 0.12167501449584961 ; 0.13962626457214355 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 10.0 ; 0.7 ; 0.8 ; 195.16745328903198 ; 0.10671424865722656 ; 0.14860248565673828 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 4.0 ; 0.7 ; 0.8 ; 194.6432740688324 ; 0.12067770957946777 ; 0.1685490608215332 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 4.5 ; 0.7 ; 0.8 ; 195.54682850837708 ; 0.12267112731933594 ; 0.1655573844909668 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 5.0 ; 0.7 ; 0.8 ; 196.3793430328369 ; 0.11967897415161133 ; 0.1545867919921875 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 5.5 ; 0.7 ; 0.8 ; 196.03087091445923 ; 0.12466621398925781 ; 0.15558433532714844 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 6.0 ; 0.7 ; 0.8 ; 195.8758463859558 ; 0.11768531799316406 ; 0.14461231231689453 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 6.5 ; 0.7 ; 0.8 ; 195.11252689361572 ; 0.11568975448608398 ; 0.15658187866210938 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 7.0 ; 0.7 ; 0.8 ; 196.48214983940125 ; 0.11967945098876953 ; 0.1765282154083252 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 7.5 ; 0.7 ; 0.8 ; 195.18152141571045 ; 0.1186826229095459 ; 0.17553043365478516 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 8.0 ; 0.7 ; 0.8 ; 194.9730589389801 ; 0.11469340324401855 ; 0.15857648849487305 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 8.5 ; 0.7 ; 0.8 ; 196.35459756851196 ; 0.11269855499267578 ; 0.1765296459197998 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 9.0 ; 0.7 ; 0.8 ; 196.85323476791382 ; 0.12865495681762695 ; 0.13563776016235352 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 9.5 ; 0.7 ; 0.8 ; 195.5579035282135 ; 0.12067723274230957 ; 0.16256475448608398 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 10.0 ; 0.7 ; 0.8 ; 196.0382890701294 ; 0.12566304206848145 ; 0.15358996391296387 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 4.5 ; 0.7 ; 0.8 ; 196.2721061706543 ; 0.1216740608215332 ; 0.14760541915893555 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 5.0 ; 0.7 ; 0.8 ; 195.4711458683014 ; 0.1216745376586914 ; 0.16456055641174316 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 5.5 ; 0.7 ; 0.8 ; 196.22338008880615 ; 0.11967921257019043 ; 0.15658140182495117 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 6.0 ; 0.7 ; 0.8 ; 195.25884008407593 ; 0.12067699432373047 ; 0.14960002899169922 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 6.5 ; 0.7 ; 0.8 ; 193.98124718666077 ; 0.1186823844909668 ; 0.1545867919921875 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 7.0 ; 0.7 ; 0.8 ; 194.11854720115662 ; 0.11768507957458496 ; 0.15857577323913574 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 7.5 ; 0.7 ; 0.8 ; 193.84599900245667 ; 0.12267208099365234 ; 0.18350934982299805 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 8.0 ; 0.7 ; 0.8 ; 193.92792010307312 ; 0.1161959171295166 ; 0.16156768798828125 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 8.5 ; 0.7 ; 0.8 ; 193.75260972976685 ; 0.1077120304107666 ; 0.1655571460723877 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 9.0 ; 0.7 ; 0.8 ; 194.32078790664673 ; 0.12267208099365234 ; 0.1466078758239746 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 9.5 ; 0.7 ; 0.8 ; 195.17153882980347 ; 0.11968016624450684 ; 0.14760494232177734 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 10.0 ; 0.7 ; 0.8 ; 193.23270511627197 ; 0.12067580223083496 ; 0.16356253623962402 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 5.0 ; 0.7 ; 0.8 ; 193.56828260421753 ; 0.1186826229095459 ; 0.16156816482543945 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 5.5 ; 0.7 ; 0.8 ; 192.03368592262268 ; 0.11968016624450684 ; 0.15858006477355957 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 6.0 ; 0.7 ; 0.8 ; 195.4989788532257 ; 0.11768484115600586 ; 0.15358948707580566 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 6.5 ; 0.7 ; 0.8 ; 194.2839994430542 ; 0.12267088890075684 ; 0.1685495376586914 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 7.0 ; 0.7 ; 0.8 ; 194.1993842124939 ; 0.1186823844909668 ; 0.1625654697418213 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 7.5 ; 0.7 ; 0.8 ; 195.98387575149536 ; 0.10870933532714844 ; 0.16356253623962402 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 8.0 ; 0.7 ; 0.8 ; 194.54546093940735 ; 0.11568999290466309 ; 0.1466083526611328 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 8.5 ; 0.7 ; 0.8 ; 192.8243715763092 ; 0.11668705940246582 ; 0.15957379341125488 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 9.0 ; 0.7 ; 0.8 ; 195.49646639823914 ; 0.12466621398925781 ; 0.1545867919921875 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 9.5 ; 0.7 ; 0.8 ; 195.64381504058838 ; 0.11768531799316406 ; 0.17054390907287598 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 10.0 ; 0.7 ; 0.8 ; 194.2094738483429 ; 0.11967873573303223 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 5.5 ; 0.7 ; 0.8 ; 195.2871196269989 ; 0.11910772323608398 ; 0.16156792640686035 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 6.0 ; 0.7 ; 0.8 ; 193.8841736316681 ; 0.12267160415649414 ; 0.1685488224029541 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 6.5 ; 0.7 ; 0.8 ; 194.12335419654846 ; 0.11967945098876953 ; 0.18350863456726074 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 7.0 ; 0.7 ; 0.8 ; 195.1020188331604 ; 0.11968016624450684 ; 0.16156744956970215 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 7.5 ; 0.7 ; 0.8 ; 195.62945556640625 ; 0.11768603324890137 ; 0.16356277465820312 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 8.0 ; 0.7 ; 0.8 ; 195.06406092643738 ; 0.11569070816040039 ; 0.1625654697418213 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 8.5 ; 0.7 ; 0.8 ; 193.99735307693481 ; 0.11967968940734863 ; 0.1575791835784912 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 9.0 ; 0.7 ; 0.8 ; 194.60907006263733 ; 0.11668825149536133 ; 0.17054414749145508 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 9.5 ; 0.7 ; 0.8 ; 192.18312668800354 ; 0.11668705940246582 ; 0.15255117416381836 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 10.0 ; 0.7 ; 0.8 ; 194.2379822731018 ; 0.11668777465820312 ; 0.15259194374084473 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 6.0 ; 0.7 ; 0.8 ; 194.79237151145935 ; 0.12267208099365234 ; 0.18051743507385254 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 6.5 ; 0.7 ; 0.8 ; 193.12288069725037 ; 0.12167501449584961 ; 0.15558290481567383 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 7.0 ; 0.7 ; 0.8 ; 194.8032112121582 ; 0.11668801307678223 ; 0.15957212448120117 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 7.5 ; 0.7 ; 0.8 ; 194.90025544166565 ; 0.1186826229095459 ; 0.1545870304107666 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 8.0 ; 0.7 ; 0.8 ; 194.32842421531677 ; 0.11768531799316406 ; 0.1625652313232422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 8.5 ; 0.7 ; 0.8 ; 195.652086019516 ; 0.12366962432861328 ; 0.15658164024353027 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 9.0 ; 0.7 ; 0.8 ; 196.8214418888092 ; 0.11968040466308594 ; 0.1685488224029541 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 9.5 ; 0.7 ; 0.8 ; 195.33743739128113 ; 0.11967992782592773 ; 0.15558433532714844 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 10.0 ; 0.7 ; 0.8 ; 195.32561349868774 ; 0.12067723274230957 ; 0.1545863151550293 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 6.5 ; 0.7 ; 0.8 ; 195.77045249938965 ; 0.11469221115112305 ; 0.15857553482055664 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 7.0 ; 0.7 ; 0.8 ; 195.04384684562683 ; 0.11469292640686035 ; 0.1715412139892578 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 7.5 ; 0.7 ; 0.8 ; 195.35741782188416 ; 0.11967945098876953 ; 0.1550917625427246 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 8.0 ; 0.7 ; 0.8 ; 195.2015197277069 ; 0.11469316482543945 ; 0.14561080932617188 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 8.5 ; 0.7 ; 0.8 ; 194.91758847236633 ; 0.11967992782592773 ; 0.16057085990905762 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 9.0 ; 0.7 ; 0.8 ; 196.35657715797424 ; 0.12067675590515137 ; 0.16954708099365234 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 9.5 ; 0.7 ; 0.8 ; 196.41740798950195 ; 0.11967825889587402 ; 0.1795201301574707 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 10.0 ; 0.7 ; 0.8 ; 195.11540699005127 ; 0.12267160415649414 ; 0.15857601165771484 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 7.0 ; 0.7 ; 0.8 ; 195.61834263801575 ; 0.12160444259643555 ; 0.16954660415649414 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 7.5 ; 0.7 ; 0.8 ; 196.69747710227966 ; 0.11469292640686035 ; 0.17353582382202148 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 8.0 ; 0.7 ; 0.8 ; 196.37021708488464 ; 0.11305928230285645 ; 0.15957260131835938 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 8.5 ; 0.7 ; 0.8 ; 196.4174337387085 ; 0.1216742992401123 ; 0.14461326599121094 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 9.0 ; 0.7 ; 0.8 ; 194.82679772377014 ; 0.121673583984375 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 9.5 ; 0.7 ; 0.8 ; 195.3519377708435 ; 0.11469316482543945 ; 0.1765282154083252 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 10.0 ; 0.7 ; 0.8 ; 196.16022443771362 ; 0.11668872833251953 ; 0.17852234840393066 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 7.5 ; 0.7 ; 0.8 ; 196.659419298172 ; 0.1216738224029541 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 8.0 ; 0.7 ; 0.8 ; 196.25859332084656 ; 0.11968016624450684 ; 0.17054367065429688 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 8.5 ; 0.7 ; 0.8 ; 196.466548204422 ; 0.12167477607727051 ; 0.17453336715698242 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 9.0 ; 0.7 ; 0.8 ; 196.31658148765564 ; 0.11469340324401855 ; 0.16256499290466309 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 9.5 ; 0.7 ; 0.8 ; 195.10109305381775 ; 0.12067723274230957 ; 0.16954708099365234 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 10.0 ; 0.7 ; 0.8 ; 195.6145613193512 ; 0.11768507957458496 ; 0.14261889457702637 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 8.0 ; 0.7 ; 0.8 ; 196.91395092010498 ; 0.12067747116088867 ; 0.1685495376586914 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 8.5 ; 0.7 ; 0.8 ; 195.57678723335266 ; 0.12067747116088867 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 9.0 ; 0.7 ; 0.8 ; 196.2499828338623 ; 0.12267160415649414 ; 0.16755223274230957 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 9.5 ; 0.7 ; 0.8 ; 197.43184781074524 ; 0.11568999290466309 ; 0.17054414749145508 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 10.0 ; 0.7 ; 0.8 ; 196.52126145362854 ; 0.10870909690856934 ; 0.16057109832763672 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 8.5 ; 0.7 ; 0.8 ; 197.4446680545807 ; 0.12167477607727051 ; 0.17353606224060059 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 9.0 ; 0.7 ; 0.8 ; 197.75124859809875 ; 0.12865614891052246 ; 0.15358924865722656 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 9.5 ; 0.7 ; 0.8 ; 195.28445529937744 ; 0.1216731071472168 ; 0.16755247116088867 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 10.0 ; 0.7 ; 0.8 ; 196.0633761882782 ; 0.12466621398925781 ; 0.15059685707092285 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 9.0 ; 0.7 ; 0.8 ; 197.52810549736023 ; 0.1186830997467041 ; 0.16156816482543945 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 9.5 ; 0.7 ; 0.8 ; 195.7888629436493 ; 0.12067747116088867 ; 0.1575794219970703 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 10.0 ; 0.7 ; 0.8 ; 196.04394245147705 ; 0.11070370674133301 ; 0.15957379341125488 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.0 ; 9.5 ; 0.7 ; 0.8 ; 196.28463649749756 ; 0.11968040466308594 ; 0.17553019523620605 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.0 ; 10.0 ; 0.7 ; 0.8 ; 194.22969675064087 ; 0.11668729782104492 ; 0.15857553482055664 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.5 ; 10.0 ; 0.7 ; 0.8 ; 194.74096608161926 ; 0.11768484115600586 ; 0.15059733390808105 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 2.5 ; 0.7 ; 0.9 ; 214.91101551055908 ; 0.12366890907287598 ; 0.1680586338043213 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 3.0 ; 0.7 ; 0.9 ; 212.28663086891174 ; 0.1186823844909668 ; 0.18650102615356445 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 3.5 ; 0.7 ; 0.9 ; 214.80349159240723 ; 0.1117095947265625 ; 0.17154169082641602 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 4.0 ; 0.7 ; 0.9 ; 213.80625748634338 ; 0.12466597557067871 ; 0.16356158256530762 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 4.5 ; 0.7 ; 0.9 ; 212.54285621643066 ; 0.11668753623962402 ; 0.18849587440490723 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 5.0 ; 0.7 ; 0.9 ; 214.88336443901062 ; 0.12466645240783691 ; 0.17752504348754883 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 5.5 ; 0.7 ; 0.9 ; 211.2004051208496 ; 0.1186826229095459 ; 0.1715402603149414 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 6.0 ; 0.7 ; 0.9 ; 212.30404138565063 ; 0.11968016624450684 ; 0.18151545524597168 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 6.5 ; 0.7 ; 0.9 ; 211.95828342437744 ; 0.11699438095092773 ; 0.17852210998535156 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 7.0 ; 0.7 ; 0.9 ; 212.35685467720032 ; 0.11369585990905762 ; 0.19049072265625 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 7.5 ; 0.7 ; 0.9 ; 213.41179084777832 ; 0.11469244956970215 ; 0.1655571460723877 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 8.0 ; 0.7 ; 0.9 ; 212.87596654891968 ; 0.1186826229095459 ; 0.17553114891052246 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 8.5 ; 0.7 ; 0.9 ; 212.04677414894104 ; 0.11170125007629395 ; 0.16156744956970215 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 9.0 ; 0.7 ; 0.9 ; 213.02189373970032 ; 0.11967992782592773 ; 0.19248509407043457 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 9.5 ; 0.7 ; 0.9 ; 212.58760905265808 ; 0.12067723274230957 ; 0.16655421257019043 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 10.0 ; 0.7 ; 0.9 ; 213.55166935920715 ; 0.12067770957946777 ; 0.19148731231689453 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 3.0 ; 0.7 ; 0.9 ; 214.32399368286133 ; 0.12067723274230957 ; 0.16655468940734863 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 3.5 ; 0.7 ; 0.9 ; 213.88376688957214 ; 0.12067747116088867 ; 0.19049072265625 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 4.0 ; 0.7 ; 0.9 ; 214.165274143219 ; 0.11469268798828125 ; 0.14760494232177734 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 4.5 ; 0.7 ; 0.9 ; 214.5577208995819 ; 0.12167477607727051 ; 0.18550395965576172 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 5.0 ; 0.7 ; 0.9 ; 213.49158096313477 ; 0.12167477607727051 ; 0.18051743507385254 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 5.5 ; 0.7 ; 0.9 ; 215.3271026611328 ; 0.11968016624450684 ; 0.17553043365478516 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 6.0 ; 0.7 ; 0.9 ; 214.31058192253113 ; 0.12466645240783691 ; 0.16406893730163574 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 6.5 ; 0.7 ; 0.9 ; 214.4288444519043 ; 0.11768484115600586 ; 0.17553067207336426 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 7.0 ; 0.7 ; 0.9 ; 215.00605130195618 ; 0.12466716766357422 ; 0.1625652313232422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 7.5 ; 0.7 ; 0.9 ; 215.20779848098755 ; 0.11469316482543945 ; 0.18350863456726074 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 8.0 ; 0.7 ; 0.9 ; 216.36944699287415 ; 0.1216745376586914 ; 0.19547724723815918 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 8.5 ; 0.7 ; 0.9 ; 215.22671222686768 ; 0.12566375732421875 ; 0.16655421257019043 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 9.0 ; 0.7 ; 0.9 ; 213.9119393825531 ; 0.11768531799316406 ; 0.18051767349243164 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 9.5 ; 0.7 ; 0.9 ; 214.92418789863586 ; 0.12466549873352051 ; 0.1715409755706787 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 10.0 ; 0.7 ; 0.9 ; 216.22117853164673 ; 0.11569070816040039 ; 0.1625654697418213 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 3.5 ; 0.7 ; 0.9 ; 214.28343772888184 ; 0.12566399574279785 ; 0.18849563598632812 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 4.0 ; 0.7 ; 0.9 ; 214.01564049720764 ; 0.12367010116577148 ; 0.1486034393310547 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 4.5 ; 0.7 ; 0.9 ; 214.52107334136963 ; 0.1186826229095459 ; 0.17852234840393066 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 5.0 ; 0.7 ; 0.9 ; 213.81174159049988 ; 0.12466645240783691 ; 0.1625654697418213 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 5.5 ; 0.7 ; 0.9 ; 215.44072031974792 ; 0.12366819381713867 ; 0.18849587440490723 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 6.0 ; 0.7 ; 0.9 ; 215.16359496116638 ; 0.12453699111938477 ; 0.17054247856140137 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 6.5 ; 0.7 ; 0.9 ; 214.2751226425171 ; 0.12067747116088867 ; 0.19250845909118652 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 7.0 ; 0.7 ; 0.9 ; 214.60894417762756 ; 0.121673583984375 ; 0.15857577323913574 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 7.5 ; 0.7 ; 0.9 ; 215.03546929359436 ; 0.1216742992401123 ; 0.18151450157165527 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 8.0 ; 0.7 ; 0.9 ; 214.18207025527954 ; 0.12366962432861328 ; 0.18350934982299805 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 8.5 ; 0.7 ; 0.9 ; 212.97521567344666 ; 0.11967992782592773 ; 0.2044532299041748 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 9.0 ; 0.7 ; 0.9 ; 213.62726092338562 ; 0.12267184257507324 ; 0.1685492992401123 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 9.5 ; 0.7 ; 0.9 ; 214.84131145477295 ; 0.12566351890563965 ; 0.15558409690856934 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 10.0 ; 0.7 ; 0.9 ; 214.40044713020325 ; 0.12466621398925781 ; 0.17752528190612793 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 4.0 ; 0.7 ; 0.9 ; 214.98563504219055 ; 0.12167477607727051 ; 0.18650150299072266 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 4.5 ; 0.7 ; 0.9 ; 215.40229964256287 ; 0.12067699432373047 ; 0.16101312637329102 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 5.0 ; 0.7 ; 0.9 ; 213.8406970500946 ; 0.1216745376586914 ; 0.17353606224060059 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 5.5 ; 0.7 ; 0.9 ; 215.3769338130951 ; 0.12267255783081055 ; 0.16655421257019043 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 6.0 ; 0.7 ; 0.9 ; 214.93092918395996 ; 0.1186826229095459 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 6.5 ; 0.7 ; 0.9 ; 212.78367567062378 ; 0.115692138671875 ; 0.17353582382202148 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 7.0 ; 0.7 ; 0.9 ; 214.378356218338 ; 0.11668777465820312 ; 0.15259170532226562 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 7.5 ; 0.7 ; 0.9 ; 214.5716016292572 ; 0.12466692924499512 ; 0.16755270957946777 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 8.0 ; 0.7 ; 0.9 ; 212.69296741485596 ; 0.11968708038330078 ; 0.18650102615356445 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 8.5 ; 0.7 ; 0.9 ; 213.7666459083557 ; 0.12466669082641602 ; 0.17054438591003418 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 9.0 ; 0.7 ; 0.9 ; 212.7447316646576 ; 0.10970640182495117 ; 0.176527738571167 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 9.5 ; 0.7 ; 0.9 ; 214.24215507507324 ; 0.12566351890563965 ; 0.17752528190612793 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 10.0 ; 0.7 ; 0.9 ; 212.80129170417786 ; 0.11968326568603516 ; 0.17553043365478516 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 4.5 ; 0.7 ; 0.9 ; 213.20517921447754 ; 0.12067723274230957 ; 0.182511568069458 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 5.0 ; 0.7 ; 0.9 ; 212.6493215560913 ; 0.11768555641174316 ; 0.1824967861175537 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 5.5 ; 0.7 ; 0.9 ; 213.53865456581116 ; 0.11968016624450684 ; 0.19747209548950195 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 6.0 ; 0.7 ; 0.9 ; 213.21805334091187 ; 0.11613130569458008 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 6.5 ; 0.7 ; 0.9 ; 213.56479215621948 ; 0.12466669082641602 ; 0.15853095054626465 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 7.0 ; 0.7 ; 0.9 ; 214.1472659111023 ; 0.1216745376586914 ; 0.15558385848999023 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 7.5 ; 0.7 ; 0.9 ; 212.30703568458557 ; 0.11170148849487305 ; 0.1984694004058838 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 8.0 ; 0.7 ; 0.9 ; 212.453467130661 ; 0.12267184257507324 ; 0.1655566692352295 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 8.5 ; 0.7 ; 0.9 ; 213.11093735694885 ; 0.11968016624450684 ; 0.17453289031982422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 9.0 ; 0.7 ; 0.9 ; 213.96676421165466 ; 0.11369562149047852 ; 0.16256475448608398 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 9.5 ; 0.7 ; 0.9 ; 213.66726732254028 ; 0.12167501449584961 ; 0.1575791835784912 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 10.0 ; 0.7 ; 0.9 ; 212.89748764038086 ; 0.11369585990905762 ; 0.176527738571167 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 5.0 ; 0.7 ; 0.9 ; 214.34646701812744 ; 0.12765955924987793 ; 0.17253851890563965 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 5.5 ; 0.7 ; 0.9 ; 213.8315680027008 ; 0.11768507957458496 ; 0.18450641632080078 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 6.0 ; 0.7 ; 0.9 ; 213.5249888896942 ; 0.12067770957946777 ; 0.17353534698486328 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 6.5 ; 0.7 ; 0.9 ; 212.87326622009277 ; 0.12067723274230957 ; 0.176527738571167 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 7.0 ; 0.7 ; 0.9 ; 213.80922937393188 ; 0.11469292640686035 ; 0.16057062149047852 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 7.5 ; 0.7 ; 0.9 ; 212.9577374458313 ; 0.1216742992401123 ; 0.1825120449066162 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 8.0 ; 0.7 ; 0.9 ; 214.73643279075623 ; 0.12267041206359863 ; 0.1625652313232422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 8.5 ; 0.7 ; 0.9 ; 212.86043882369995 ; 0.11469316482543945 ; 0.18650221824645996 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 9.0 ; 0.7 ; 0.9 ; 213.55936360359192 ; 0.11768627166748047 ; 0.18350887298583984 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 9.5 ; 0.7 ; 0.9 ; 212.6642189025879 ; 0.11269879341125488 ; 0.18550348281860352 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 10.0 ; 0.7 ; 0.9 ; 211.3445851802826 ; 0.11967992782592773 ; 0.16655468940734863 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 5.5 ; 0.7 ; 0.9 ; 211.09920597076416 ; 0.1186823844909668 ; 0.17054462432861328 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 6.0 ; 0.7 ; 0.9 ; 211.8381986618042 ; 0.12366890907287598 ; 0.16356301307678223 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 6.5 ; 0.7 ; 0.9 ; 210.24393272399902 ; 0.11569046974182129 ; 0.1436152458190918 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 7.0 ; 0.7 ; 0.9 ; 211.081933259964 ; 0.12067723274230957 ; 0.16456031799316406 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 7.5 ; 0.7 ; 0.9 ; 211.46941375732422 ; 0.12466621398925781 ; 0.17154145240783691 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 8.0 ; 0.7 ; 0.9 ; 210.74561524391174 ; 0.11469340324401855 ; 0.16655445098876953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 8.5 ; 0.7 ; 0.9 ; 210.4920527935028 ; 0.10870981216430664 ; 0.16655445098876953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 9.0 ; 0.7 ; 0.9 ; 211.1094572544098 ; 0.12067699432373047 ; 0.15259194374084473 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 9.5 ; 0.7 ; 0.9 ; 211.40188598632812 ; 0.11768531799316406 ; 0.17353606224060059 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 10.0 ; 0.7 ; 0.9 ; 211.08505082130432 ; 0.11369562149047852 ; 0.1655571460723877 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 6.0 ; 0.7 ; 0.9 ; 209.89759707450867 ; 0.11369609832763672 ; 0.16356277465820312 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 6.5 ; 0.7 ; 0.9 ; 211.66053080558777 ; 0.11668825149536133 ; 0.16954636573791504 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 7.0 ; 0.7 ; 0.9 ; 212.05375742912292 ; 0.1186826229095459 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 7.5 ; 0.7 ; 0.9 ; 212.94826650619507 ; 0.11768555641174316 ; 0.15957307815551758 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 8.0 ; 0.7 ; 0.9 ; 212.8012638092041 ; 0.12406730651855469 ; 0.1625652313232422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 8.5 ; 0.7 ; 0.9 ; 213.07353234291077 ; 0.11668825149536133 ; 0.1685488224029541 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 9.0 ; 0.7 ; 0.9 ; 210.4532024860382 ; 0.11369681358337402 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 9.5 ; 0.7 ; 0.9 ; 211.650249004364 ; 0.11668825149536133 ; 0.17353558540344238 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 10.0 ; 0.7 ; 0.9 ; 212.06315159797668 ; 0.11968016624450684 ; 0.13962697982788086 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 6.5 ; 0.7 ; 0.9 ; 213.59709429740906 ; 0.1156911849975586 ; 0.16755151748657227 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 7.0 ; 0.7 ; 0.9 ; 213.22606801986694 ; 0.11668896675109863 ; 0.15658092498779297 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 7.5 ; 0.7 ; 0.9 ; 213.16852402687073 ; 0.1186821460723877 ; 0.15059804916381836 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 8.0 ; 0.7 ; 0.9 ; 213.94705867767334 ; 0.1216742992401123 ; 0.1545867919921875 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 8.5 ; 0.7 ; 0.9 ; 212.88254499435425 ; 0.11469149589538574 ; 0.16655397415161133 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 9.0 ; 0.7 ; 0.9 ; 211.87492203712463 ; 0.12067699432373047 ; 0.15059709548950195 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 9.5 ; 0.7 ; 0.9 ; 212.9290726184845 ; 0.11967873573303223 ; 0.18151450157165527 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 10.0 ; 0.7 ; 0.9 ; 211.20013451576233 ; 0.12067651748657227 ; 0.18051791191101074 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 7.0 ; 0.7 ; 0.9 ; 210.81768536567688 ; 0.11552977561950684 ; 0.151594877243042 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 7.5 ; 0.7 ; 0.9 ; 212.54516744613647 ; 0.11569094657897949 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 8.0 ; 0.7 ; 0.9 ; 212.3054711818695 ; 0.1186823844909668 ; 0.15957331657409668 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 8.5 ; 0.7 ; 0.9 ; 213.76918506622314 ; 0.12267160415649414 ; 0.16655492782592773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 9.0 ; 0.7 ; 0.9 ; 212.5910210609436 ; 0.11967802047729492 ; 0.1655564308166504 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 9.5 ; 0.7 ; 0.9 ; 210.98894047737122 ; 0.11718058586120605 ; 0.1605701446533203 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 10.0 ; 0.7 ; 0.9 ; 212.24129581451416 ; 0.12067723274230957 ; 0.16559219360351562 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 7.5 ; 0.7 ; 0.9 ; 211.02973222732544 ; 0.1216738224029541 ; 0.16356301307678223 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 8.0 ; 0.7 ; 0.9 ; 212.3879952430725 ; 0.12267136573791504 ; 0.17154169082641602 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 8.5 ; 0.7 ; 0.9 ; 214.06043219566345 ; 0.12067723274230957 ; 0.1685495376586914 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 9.0 ; 0.7 ; 0.9 ; 212.45031476020813 ; 0.11768555641174316 ; 0.16356253623962402 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 9.5 ; 0.7 ; 0.9 ; 213.1110541820526 ; 0.10870885848999023 ; 0.1625652313232422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 10.0 ; 0.7 ; 0.9 ; 214.0470473766327 ; 0.1186823844909668 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 8.0 ; 0.7 ; 0.9 ; 211.19055914878845 ; 0.11569070816040039 ; 0.17054390907287598 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 8.5 ; 0.7 ; 0.9 ; 213.66680550575256 ; 0.1186826229095459 ; 0.16655445098876953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 9.0 ; 0.7 ; 0.9 ; 212.52099227905273 ; 0.12566447257995605 ; 0.17752504348754883 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 9.5 ; 0.7 ; 0.9 ; 214.11755776405334 ; 0.1186819076538086 ; 0.16356253623962402 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 10.0 ; 0.7 ; 0.9 ; 215.71298933029175 ; 0.12466645240783691 ; 0.1874990463256836 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 8.5 ; 0.7 ; 0.9 ; 213.98326921463013 ; 0.12067699432373047 ; 0.16356253623962402 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 9.0 ; 0.7 ; 0.9 ; 213.53421783447266 ; 0.11269736289978027 ; 0.16156792640686035 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 9.5 ; 0.7 ; 0.9 ; 213.62003898620605 ; 0.11768460273742676 ; 0.17253828048706055 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 10.0 ; 0.7 ; 0.9 ; 212.78691172599792 ; 0.12566375732421875 ; 0.17552971839904785 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 9.0 ; 0.7 ; 0.9 ; 212.12607884407043 ; 0.11967992782592773 ; 0.16655468940734863 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 9.5 ; 0.7 ; 0.9 ; 206.28682780265808 ; 0.11967992782592773 ; 0.15059709548950195 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 10.0 ; 0.7 ; 0.9 ; 198.3454372882843 ; 0.11668729782104492 ; 0.18051743507385254 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.0 ; 9.5 ; 0.7 ; 0.9 ; 199.24416399002075 ; 0.11170125007629395 ; 0.15658092498779297 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.0 ; 10.0 ; 0.7 ; 0.9 ; 198.65919852256775 ; 0.11469268798828125 ; 0.15957236289978027 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.5 ; 10.0 ; 0.7 ; 0.9 ; 199.92921710014343 ; 0.1186821460723877 ; 0.15259170532226562 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 2.5 ; 0.7 ; 1.0 ; 230.27960681915283 ; 0.11269855499267578 ; 0.15857577323913574 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 3.0 ; 0.7 ; 1.0 ; 228.72604775428772 ; 0.11170220375061035 ; 0.18949389457702637 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 3.5 ; 0.7 ; 1.0 ; 229.3857786655426 ; 0.11768436431884766 ; 0.1874985694885254 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 4.0 ; 0.7 ; 1.0 ; 228.51997470855713 ; 0.11373090744018555 ; 0.18151473999023438 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 4.5 ; 0.7 ; 1.0 ; 229.42362236976624 ; 0.11469292640686035 ; 0.1655580997467041 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 5.0 ; 0.7 ; 1.0 ; 227.6206841468811 ; 0.11668753623962402 ; 0.15957403182983398 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 5.5 ; 0.7 ; 1.0 ; 227.97028946876526 ; 0.11668610572814941 ; 0.16561412811279297 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 6.0 ; 0.7 ; 1.0 ; 227.42217826843262 ; 0.11369585990905762 ; 0.18749737739562988 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 6.5 ; 0.7 ; 1.0 ; 226.93475222587585 ; 0.11568975448608398 ; 0.18051695823669434 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 7.0 ; 0.7 ; 1.0 ; 230.61177802085876 ; 0.12467074394226074 ; 0.1495990753173828 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 7.5 ; 0.7 ; 1.0 ; 227.4105203151703 ; 0.11070394515991211 ; 0.19148659706115723 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 8.0 ; 0.7 ; 1.0 ; 228.0469353199005 ; 0.11070370674133301 ; 0.14760518074035645 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 8.5 ; 0.7 ; 1.0 ; 227.8303472995758 ; 0.11070370674133301 ; 0.18350911140441895 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 9.0 ; 0.7 ; 1.0 ; 227.67091298103333 ; 0.11269760131835938 ; 0.17453360557556152 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 9.5 ; 0.7 ; 1.0 ; 229.44504237174988 ; 0.11668848991394043 ; 0.18151450157165527 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.0 ; 10.0 ; 0.7 ; 1.0 ; 227.93067622184753 ; 0.11369919776916504 ; 0.1765279769897461 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 3.0 ; 0.7 ; 1.0 ; 226.57256197929382 ; 0.11667776107788086 ; 0.17553114891052246 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 3.5 ; 0.7 ; 1.0 ; 226.06038355827332 ; 0.11768555641174316 ; 0.19747161865234375 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 4.0 ; 0.7 ; 1.0 ; 226.48475313186646 ; 0.1156911849975586 ; 0.1874988079071045 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 4.5 ; 0.7 ; 1.0 ; 226.5444188117981 ; 0.1156911849975586 ; 0.16356205940246582 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 5.0 ; 0.7 ; 1.0 ; 226.2868151664734 ; 0.1077117919921875 ; 0.17752623558044434 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 5.5 ; 0.7 ; 1.0 ; 228.5458540916443 ; 0.11968016624450684 ; 0.17253851890563965 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 6.0 ; 0.7 ; 1.0 ; 226.64562964439392 ; 0.11269855499267578 ; 0.16156816482543945 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 6.5 ; 0.7 ; 1.0 ; 228.03050231933594 ; 0.11668777465820312 ; 0.16455984115600586 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 7.0 ; 0.7 ; 1.0 ; 227.32893419265747 ; 0.10671472549438477 ; 0.20545029640197754 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 7.5 ; 0.7 ; 1.0 ; 227.87047863006592 ; 0.11459803581237793 ; 0.17253851890563965 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 8.0 ; 0.7 ; 1.0 ; 226.12848711013794 ; 0.11170101165771484 ; 0.16655468940734863 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 8.5 ; 0.7 ; 1.0 ; 227.1676390171051 ; 0.10471916198730469 ; 0.17952489852905273 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 9.0 ; 0.7 ; 1.0 ; 229.18931221961975 ; 0.11768507957458496 ; 0.15658116340637207 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 9.5 ; 0.7 ; 1.0 ; 227.67196917533875 ; 0.10471963882446289 ; 0.17353558540344238 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+2.5 ; 10.0 ; 0.7 ; 1.0 ; 229.36219000816345 ; 0.11070370674133301 ; 0.18051767349243164 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 3.5 ; 0.7 ; 1.0 ; 227.27980995178223 ; 0.11668753623962402 ; 0.19349145889282227 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 4.0 ; 0.7 ; 1.0 ; 228.80836534500122 ; 0.11070466041564941 ; 0.15558409690856934 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 4.5 ; 0.7 ; 1.0 ; 227.20714020729065 ; 0.11568927764892578 ; 0.15259146690368652 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 5.0 ; 0.7 ; 1.0 ; 228.93998217582703 ; 0.11668801307678223 ; 0.19447946548461914 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 5.5 ; 0.7 ; 1.0 ; 227.865868806839 ; 0.1107022762298584 ; 0.16855239868164062 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 6.0 ; 0.7 ; 1.0 ; 228.58187198638916 ; 0.11967945098876953 ; 0.18450689315795898 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 6.5 ; 0.7 ; 1.0 ; 227.00115442276 ; 0.10571765899658203 ; 0.18301749229431152 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 7.0 ; 0.7 ; 1.0 ; 226.17733144760132 ; 0.11369633674621582 ; 0.18550372123718262 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 7.5 ; 0.7 ; 1.0 ; 227.66153931617737 ; 0.11170077323913574 ; 0.18834471702575684 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 8.0 ; 0.7 ; 1.0 ; 225.81838989257812 ; 0.10871553421020508 ; 0.17254209518432617 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 8.5 ; 0.7 ; 1.0 ; 229.2246870994568 ; 0.11269855499267578 ; 0.17054367065429688 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 9.0 ; 0.7 ; 1.0 ; 231.06290936470032 ; 0.10571622848510742 ; 0.17852282524108887 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 9.5 ; 0.7 ; 1.0 ; 234.9243712425232 ; 0.11668801307678223 ; 0.18350934982299805 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.0 ; 10.0 ; 0.7 ; 1.0 ; 239.96712112426758 ; 0.12221550941467285 ; 0.16751694679260254 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 4.0 ; 0.7 ; 1.0 ; 235.5476529598236 ; 0.1186823844909668 ; 0.1765279769897461 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 4.5 ; 0.7 ; 1.0 ; 234.67978143692017 ; 0.10970640182495117 ; 0.1795186996459961 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 5.0 ; 0.7 ; 1.0 ; 235.11888599395752 ; 0.11170291900634766 ; 0.20296406745910645 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 5.5 ; 0.7 ; 1.0 ; 236.31660842895508 ; 0.11668729782104492 ; 0.18650126457214355 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 6.0 ; 0.7 ; 1.0 ; 227.31509375572205 ; 0.11170101165771484 ; 0.18849611282348633 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 6.5 ; 0.7 ; 1.0 ; 229.40587830543518 ; 0.11569070816040039 ; 0.18650126457214355 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 7.0 ; 0.7 ; 1.0 ; 227.18743181228638 ; 0.11269855499267578 ; 0.1655571460723877 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 7.5 ; 0.7 ; 1.0 ; 228.8785936832428 ; 0.1186819076538086 ; 0.1795196533203125 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 8.0 ; 0.7 ; 1.0 ; 226.183043718338 ; 0.11369514465332031 ; 0.1715412139892578 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 8.5 ; 0.7 ; 1.0 ; 227.7227303981781 ; 0.11868095397949219 ; 0.17453289031982422 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 9.0 ; 0.7 ; 1.0 ; 227.44240283966064 ; 0.10970902442932129 ; 0.16356301307678223 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 9.5 ; 0.7 ; 1.0 ; 227.0851969718933 ; 0.10571837425231934 ; 0.1873643398284912 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+3.5 ; 10.0 ; 0.7 ; 1.0 ; 228.18719363212585 ; 0.10970640182495117 ; 0.1795203685760498 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 4.5 ; 0.7 ; 1.0 ; 226.70954966545105 ; 0.11668729782104492 ; 0.16057300567626953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 5.0 ; 0.7 ; 1.0 ; 228.61718273162842 ; 0.1166841983795166 ; 0.1735363006591797 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 5.5 ; 0.7 ; 1.0 ; 226.11571645736694 ; 0.10571742057800293 ; 0.17752456665039062 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 6.0 ; 0.7 ; 1.0 ; 237.2706139087677 ; 0.11967945098876953 ; 0.20744848251342773 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 6.5 ; 0.7 ; 1.0 ; 281.16430401802063 ; 0.11370420455932617 ; 0.18949365615844727 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 7.0 ; 0.7 ; 1.0 ; 265.0460021495819 ; 0.126662015914917 ; 0.18949317932128906 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 7.5 ; 0.7 ; 1.0 ; 454.696989774704 ; 0.1260526180267334 ; 0.38074421882629395 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 8.0 ; 0.7 ; 1.0 ; 711.052797794342 ; 0.11180257797241211 ; 0.4764530658721924 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 8.5 ; 0.7 ; 1.0 ; 662.412207365036 ; 0.13629913330078125 ; 0.9728591442108154 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 9.0 ; 0.7 ; 1.0 ; 718.3675348758698 ; 0.13562679290771484 ; 1.4315996170043945 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 9.5 ; 0.7 ; 1.0 ; 672.3599052429199 ; 0.11814713478088379 ; 0.8207519054412842 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.0 ; 10.0 ; 0.7 ; 1.0 ; 766.6976933479309 ; 0.13512229919433594 ; 0.21639752388000488 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 5.0 ; 0.7 ; 1.0 ; 724.0915904045105 ; 0.12780117988586426 ; 0.8004827499389648 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 5.5 ; 0.7 ; 1.0 ; 283.8929395675659 ; 0.12466645240783691 ; 0.17553019523620605 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 6.0 ; 0.7 ; 1.0 ; 237.62350058555603 ; 0.11070370674133301 ; 0.18550443649291992 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 6.5 ; 0.7 ; 1.0 ; 233.37067699432373 ; 0.11469364166259766 ; 0.17254161834716797 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 7.0 ; 0.7 ; 1.0 ; 232.63883781433105 ; 0.11269807815551758 ; 0.16156792640686035 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 7.5 ; 0.7 ; 1.0 ; 236.34133458137512 ; 0.10472273826599121 ; 0.18949365615844727 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 8.0 ; 0.7 ; 1.0 ; 259.4768373966217 ; 0.13371539115905762 ; 0.1779804229736328 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 8.5 ; 0.7 ; 1.0 ; 264.0167191028595 ; 0.1306133270263672 ; 0.2084970474243164 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 9.0 ; 0.7 ; 1.0 ; 264.6405556201935 ; 0.12002325057983398 ; 0.19710183143615723 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 9.5 ; 0.7 ; 1.0 ; 260.0067296028137 ; 0.12616801261901855 ; 0.18849658966064453 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+4.5 ; 10.0 ; 0.7 ; 1.0 ; 276.22017312049866 ; 0.13110113143920898 ; 0.2480318546295166 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 5.5 ; 0.7 ; 1.0 ; 325.35376143455505 ; 0.15263891220092773 ; 0.24131178855895996 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 6.0 ; 0.7 ; 1.0 ; 318.4510085582733 ; 0.1216728687286377 ; 0.23338055610656738 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 6.5 ; 0.7 ; 1.0 ; 312.7801022529602 ; 0.13962650299072266 ; 0.21642255783081055 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 7.0 ; 0.7 ; 1.0 ; 317.6638376712799 ; 0.13862895965576172 ; 0.2513275146484375 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 7.5 ; 0.7 ; 1.0 ; 278.5973768234253 ; 0.13663411140441895 ; 0.21442604064941406 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 8.0 ; 0.7 ; 1.0 ; 251.1934678554535 ; 0.12765860557556152 ; 0.18949246406555176 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 8.5 ; 0.7 ; 1.0 ; 251.7233853340149 ; 0.11967945098876953 ; 0.1815180778503418 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 9.0 ; 0.7 ; 1.0 ; 243.26375818252563 ; 0.12765979766845703 ; 0.18350934982299805 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 9.5 ; 0.7 ; 1.0 ; 239.9482638835907 ; 0.11967968940734863 ; 0.1685495376586914 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.0 ; 10.0 ; 0.7 ; 1.0 ; 233.68639278411865 ; 0.11569452285766602 ; 0.16755151748657227 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 6.0 ; 0.7 ; 1.0 ; 221.73886513710022 ; 0.118682861328125 ; 0.16655445098876953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 6.5 ; 0.7 ; 1.0 ; 214.38377618789673 ; 0.11170053482055664 ; 0.17253851890563965 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 7.0 ; 0.7 ; 1.0 ; 213.3854374885559 ; 0.10981106758117676 ; 0.167555570602417 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 7.5 ; 0.7 ; 1.0 ; 214.26555228233337 ; 0.10372209548950195 ; 0.19148778915405273 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 8.0 ; 0.7 ; 1.0 ; 214.56102347373962 ; 0.09973287582397461 ; 0.17253780364990234 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 8.5 ; 0.7 ; 1.0 ; 213.43760871887207 ; 0.09873557090759277 ; 0.167555570602417 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 9.0 ; 0.7 ; 1.0 ; 214.30303692817688 ; 0.11071491241455078 ; 0.176527738571167 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 9.5 ; 0.7 ; 1.0 ; 214.22410130500793 ; 0.11370110511779785 ; 0.16655445098876953 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+5.5 ; 10.0 ; 0.7 ; 1.0 ; 214.37082171440125 ; 0.10571742057800293 ; 0.1685502529144287 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 6.5 ; 0.7 ; 1.0 ; 213.4819793701172 ; 0.10073113441467285 ; 0.18550729751586914 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 7.0 ; 0.7 ; 1.0 ; 213.0496609210968 ; 0.10671377182006836 ; 0.15857601165771484 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 7.5 ; 0.7 ; 1.0 ; 212.8360800743103 ; 0.10272526741027832 ; 0.1815168857574463 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 8.0 ; 0.7 ; 1.0 ; 212.32001996040344 ; 0.10671615600585938 ; 0.1675553321838379 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 8.5 ; 0.7 ; 1.0 ; 212.5353662967682 ; 0.10471940040588379 ; 0.14960074424743652 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 9.0 ; 0.7 ; 1.0 ; 213.21448755264282 ; 0.10172796249389648 ; 0.18949294090270996 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 9.5 ; 0.7 ; 1.0 ; 213.55231857299805 ; 0.11070370674133301 ; 0.17353606224060059 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.0 ; 10.0 ; 0.7 ; 1.0 ; 213.57682919502258 ; 0.10905027389526367 ; 0.17054390907287598 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 7.0 ; 0.7 ; 1.0 ; 213.19920539855957 ; 0.10571813583374023 ; 0.16954684257507324 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 7.5 ; 0.7 ; 1.0 ; 212.8243944644928 ; 0.10471963882446289 ; 0.170546293258667 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 8.0 ; 0.7 ; 1.0 ; 213.10218811035156 ; 0.10571789741516113 ; 0.168548583984375 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 8.5 ; 0.7 ; 1.0 ; 220.68258476257324 ; 0.09175491333007812 ; 0.18253350257873535 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 9.0 ; 0.7 ; 1.0 ; 224.84693932533264 ; 0.11369919776916504 ; 0.15857863426208496 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 9.5 ; 0.7 ; 1.0 ; 227.9040765762329 ; 0.12067651748657227 ; 0.16558408737182617 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+6.5 ; 10.0 ; 0.7 ; 1.0 ; 224.5658643245697 ; 0.11271548271179199 ; 0.17952704429626465 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 7.5 ; 0.7 ; 1.0 ; 220.9263777732849 ; 0.11370062828063965 ; 0.15145301818847656 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 8.0 ; 0.7 ; 1.0 ; 226.6009509563446 ; 0.11690211296081543 ; 0.16256499290466309 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 8.5 ; 0.7 ; 1.0 ; 226.59294939041138 ; 0.11221146583557129 ; 0.1805250644683838 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 9.0 ; 0.7 ; 1.0 ; 224.4379985332489 ; 0.11469602584838867 ; 0.16257047653198242 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 9.5 ; 0.7 ; 1.0 ; 224.98801636695862 ; 0.11269950866699219 ; 0.16956758499145508 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.0 ; 10.0 ; 0.7 ; 1.0 ; 220.00590538978577 ; 0.1107032299041748 ; 0.1654195785522461 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 8.0 ; 0.7 ; 1.0 ; 217.55522751808167 ; 0.11070370674133301 ; 0.14362001419067383 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 8.5 ; 0.7 ; 1.0 ; 216.0426585674286 ; 0.1047205924987793 ; 0.16556119918823242 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 9.0 ; 0.7 ; 1.0 ; 218.3661847114563 ; 0.10372257232666016 ; 0.16156983375549316 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 9.5 ; 0.7 ; 1.0 ; 216.73923707008362 ; 0.11170077323913574 ; 0.17253899574279785 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+7.5 ; 10.0 ; 0.7 ; 1.0 ; 216.34922099113464 ; 0.11269879341125488 ; 0.16954660415649414 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 8.5 ; 0.7 ; 1.0 ; 215.39426159858704 ; 0.1077263355255127 ; 0.161574125289917 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 9.0 ; 0.7 ; 1.0 ; 216.04924988746643 ; 0.10471892356872559 ; 0.14573097229003906 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 9.5 ; 0.7 ; 1.0 ; 215.43723034858704 ; 0.10172796249389648 ; 0.15857648849487305 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.0 ; 10.0 ; 0.7 ; 1.0 ; 214.8521749973297 ; 0.1077122688293457 ; 0.17553019523620605 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 9.0 ; 0.7 ; 1.0 ; 215.1452648639679 ; 0.10571742057800293 ; 0.15957331657409668 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 9.5 ; 0.7 ; 1.0 ; 215.2509424686432 ; 0.10671377182006836 ; 0.1835174560546875 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+8.5 ; 10.0 ; 0.7 ; 1.0 ; 214.98319792747498 ; 0.10372352600097656 ; 0.1545867919921875 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.0 ; 9.5 ; 0.7 ; 1.0 ; 214.43843913078308 ; 0.11070847511291504 ; 0.16655802726745605 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.0 ; 10.0 ; 0.7 ; 1.0 ; 213.22264575958252 ; 0.10471987724304199 ; 0.16954660415649414 ; 1080 ; 36 ; 0.0 ; 0.0
+Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
+9.5 ; 10.0 ; 0.7 ; 1.0 ; 214.30347967147827 ; 0.11070394515991211 ; 0.17453265190124512 ; 1080 ; 36 ; 0.0 ; 0.0
