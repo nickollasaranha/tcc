@@ -1,0 +1,84 @@
+\chapter{Resultados Experimentais}
+\label{ch:experimental}
+
+Este capítulo apresenta os resultados obtidos através dos métodos e técnicas apresentadas no Capítulo \ref{ch:alpr}, com o banco de dados apresentado no Capítulo \ref{ch:database}. A Seção \ref{sec:resultsalpr} cita o modelo utilizo e suas verificações, enquanto aa Seção \ref{sec:discussion} discorre sobre possíveis ideias que não deram certo.
+
+\section{Resultados do método de ALPR}
+\label{sec:resultsalpr}
+
+Esta Seção apresenta em detalhes as variações de parâmetros e abordagens e seus possíveis resultados. A subseção \ref{sub:ocr} possui os resultados utilizados para técnica de OCR e a subseção \ref{sub:all} mostra os valores finais atingidos no trabalho. Por fim, a subseção \ref{sub:timing} exibe informações sobre o tempo de processamento no hardware proposto.
+
+\subsection{Dataset}
+
+Dentro da base de dados disponível no Capítulo \ref{ch:database}, utilizou-se a técnica de validação \textit{cross-fold}, divindo-a em conjuntos de treino e validação. Para isto, 50\% da base de dados fora reservada para treino e os outros 50\% para validação. Fez-se isto devido à técnica de OCR utilizar inteligência artificial para classificação, no caso, SVM. É importante lembrar que este trabalho contempla apenas placas veiculares brasileiras, de veículos de quatro rodas (carros).
+
+< picture of plates examples in database >
+
+\subsection{Parametrização}
+
+A técnica apresentada no Capítulo \ref{ch:alpr} possui uma relação direta em um contorno ser ou não um possível caractere. Esta função utiliza parâmetros para a primeira validação, que são o \textit{aspect ratio} do caractere, definido pela proporção entre seu comprimento e sua altura, seu comprimento, altura e área, em pixels. Esta primeira função não o compara com outros caracteres e é de suma importância que seu retorno seja preciso, a fim de deixar poucos possíveis candidatos para a função mais custosa.
+
+Outra função que utiliza parâmetros variáveis é a de classificar possíveis placas no cenário. Após encontrados caracteres semelhantes, estes são candidatos a possíveis placas e passam por uma filtragem de \textit{aspect ratio}, podendo ser desclassificados para minimizar o processamento final.
+
+A variação nestes parâmetros resulta no gráfico exibido na figura X. Esta variação é fruto do resultado de todas as combinações possíveis no intervalo de 0 a 1, com variação na primeira casa decimal, para o \textit{aspect ratio} de cada caractere, e variação no intervalo de 2 a 10, com passo 0.5 para o \textit{aspect ratio} da placa veicular.
+
+\subsection{Modelo experimental}
+
+Todos os parâmetros do ALPR foram calibrados de forma experimental e depois testados por força bruta em um intervalo considerável. Para cada imagem do banco de dados de validação fora testado diferentes parâmetros. A angulação máxima entre dois caracteres fora definida em 12 graus. A quantidade mínima de pixels de comprimento de um caractere é definida em 2, enquanto o mínimo de altura é de 8. Estas variações implicam diretamente na distância em que a placa pode ser processada pela técnica. A maior variação de área de um caractere para o outro é de 100\%, enquanto a altura fica em 20\% e o comprimento em 150\%. Este último é necessário pela fonte ser bem diferente em relação aos caracteres "1" e "8". O mínimo de caracteres aceitáveis para uma placa são cinco, e o mínimo de área aceitável para um caractere é de 50 pixels.
+
+Para o OCR, as SVMs foram treinadas com a técnica de \textit{one-against-one}, com kernel LINEAR, com os parâmetros C em 2.67, Gamma de 5.383. Para extração de características, utilizou-se HOG com o tamanho de caracteres em 24 x 16 pixels, com \textit{cell size} de 4 x 4, \textit{block size} de 2 x 2 e \textit{nbins} = 9. O resultado do descritor pode ser visto na figura \ref{fig:hog}. O arquivo da SVM fora salvo depois do treino, gerando um .dat de aproximadamente 30MB, para que não haja necessidade de treinar toda vez que o código for executado.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=100mm, scale=0.3]{imagens/hog.jpg}
+\caption{Imagem de um caractere (esquerda) e seu resultado após aplicado HOG (direita).}
+\label{fig:hog}
+\end{figure}
+
+\subsection{Resultados do OCR}
+\label{sub:ocr}
+
+Para o reconhecimento de caractere fora escolhido, primeiramente, o algoritmo da Tesseract, da Google, citado anteriormente. Este algoritmo contém algumas restrições, como a de imagem estar alinhada corretamente na horizontal (aplicação de uma função de \textit{deskew}), seu texto especificamente em branco, com o resto do fundo preto. Mesmo cumprindo estes requisitos, sua acurácia não passou de 50\% no banco de dados utilizado. É visto que este tipo de resultado é comum e muitos trabalhos também se decepcionam com o Tesseract, então, escolheu-se HOG e SVM para a parte do OCR.
+
+O descritor HOG é composto dos seguintes parâmetros: (i) \textit{winSize}, (ii) \textit{blockSize}, (iii) \textit{blockStride}, (iv) \textit{cellSize} e (v) \textit{nbins}. Estes parâmetros são calculados com base em quatro possíveis variáveis: \textit{imageShape}, \textit{cellSize}, \textit{blockSize} e \textit{nBins}. Suas variações representam mudanças significativas no código, impactando diretamente no tempo de processamento e acurácia de classificação. Seus resultados podem ser vistos na figura X.
+
+\subsection{Resultados gerais do ALPR}
+\label{sub:all}
+
+Este experimento é a combinação de todas as técnicas de pré-processamento, ALPR e pós processamento com heurística, aplicada no banco de dados de validação, após o treinamento da SVM para OCR. Ao final, os resultados obtidos considerando a classificação de cada veículo pode ser observada na tabela \ref{tab:compare_results}, comparando-os com técnicas citadas no Capítulo \ref{ch:related_work}.
+
+\begin{table}[!htb]
+\centering
+\caption{Comparativo de técnicas de ALPR e seus resultados}
+\label{tab:compare_results}
+\begin{tabular}{llll}
+\hline
+ALPR                                      & Por veículo (todos corretos) &  &  \\ \hline
+Sighthound                                & 55.47\%                      &  &  \\
+Redundância temporal com voto majoritário & 81.80\%                      &  &  \\
+\textbf{Método proposto}                  & 75.00\%                      &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Benchmark de hardware}
+\label{sub:timing}
+
+Embora o trabalho proposto utiliza um hardware de baixo custo, especificamente um Raspberry Pi modelo 3B, não há necessidade de todo o processo ser implementado e testado no mesmo. Como o código escolhido é Python, sua portabilidade para o Raspberry Pi fora imediata, instalando apenas o OpenCV (sem necessidade de compilar uma versão) utilizando o gerenciador de pacotes PIP. Feito isso, o código fora executado novamente e seus resultados podem ser vistos na tabela \ref{tab:timing_hardware}.
+
+\begin{table}[!htb]
+\centering
+\caption{Comparação de tempo entre diferentes hardwares}
+\label{tab:timing_hardware}
+\begin{tabular}{lccc}
+Hardware & Melhor tempo & Tempo médio & Pior tempo \\ \hline
+Intel Core i7 - 8700K @ 4.6GHz & 0.016s & 0.21s & 0.35s \\
+Raspberry Pi model 3B &  & 1.3s & \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Discussões}
+\label{sec:discussion}
+
+O método proposto para ALPR é capaz de obter uma performance significativa, a ponto de poder ser utilizado para as tarefas propostas. É possível ver que trabalhos que atingem um resultado melhor \cite{laroca2018robust} utilizam um hardware muito mais potente para cálculo das redes neurais, sem contar o tempo necessário para treinar as redes neurais. É possível aumentar os resultados obtidos utilizando um ambiente controlado, como o modelo proposto em um condomínio que possui um agente inteligente capaz de abrir o portão, reconhecendo a placa do carro.
+
+A maioria dos erros de classificação se deram pela iluminação causando possíveis bordas nas placas veiculares, como pode ser visto na imagem X, ou deixando a placa veicular escura, fazendo-a parecer um objeto descartável. O sistema é robusto o suficiente para poder distinguir de outros textos escritos na rua, fazendo o bom uso do \textit{aspect ratio} da placa veicular, porém limitando sua implementação para veículos de quatro rodas. A heurística utilizada também só é válida para veículos brasileiros, pois estes seguem o padrão de três caracteres e quatro dígitos.

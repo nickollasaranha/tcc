@@ -130,9 +130,7 @@ def checkIfPossibleChar(possibleChar, char_aspect_ratio_interval):
         ):
         #print ("ok")
         return True
-    else:
-        #print ("no")
-        return False
+    else: return False
 
 # with this function, we start off with all the possible chars in one big list
 # the purpose of this function is to re-arrange the one big list of chars into a list of lists of matching chars,

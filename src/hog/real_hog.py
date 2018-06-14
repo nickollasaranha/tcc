@@ -3,9 +3,9 @@ import cv2
 import matplotlib.pyplot as plt
 
 img = cv2.cvtColor(cv2.imread("1.png")[583:610, 1011:1025], cv2.COLOR_BGR2GRAY)
-img = cv2.resize(img, (16, 32))
+img = cv2.resize(img, (16, 24))
 
-cell_size = (2, 2)  # h x w in pixels
+cell_size = (4, 4)  # h x w in pixels
 block_size = (2, 2)  # h x w in cells
 nbins = 9  # number of orientation bins
 
@@ -48,7 +48,7 @@ plt.figure()
 plt.imshow(img, cmap='gray')
 plt.show()
 
-bin = 5  # angle is 360 / nbins * direction
+bin = 8  # angle is 360 / nbins * direction
 plt.pcolor(gradients[:, :, bin])
 plt.gca().invert_yaxis()
 plt.gca().set_aspect('equal', adjustable='box')

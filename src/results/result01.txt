@@ -2320,5 +2320,3 @@ Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Asp
 4.5 ; 5.5 ; 0.1 ; 1.0 ; 290.7985215187073 ; 0.08976483345031738 ; 0.2124316692352295 ; 1080 ; 36 ; 0.18796296296296297 ; 0.5833333333333334
 Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
 4.5 ; 6.0 ; 0.1 ; 1.0 ; 292.61533856391907 ; 0.09017014503479004 ; 0.23337864875793457 ; 1080 ; 36 ; 0.32037037037037036 ; 0.7777777777777778
-Min Plate Aspect Ratio;Max Plate Aspect Ratio;Min Char Aspect Ratio;Max Char Aspect Ratio;Time running;Best Time;Worst Time;Total pictures;Total tracks;Correct Images;Correct tracks
-4.5 ; 6.5 ; 0.1 ; 1.0 ; 294.1343138217926 ; 0.08973050117492676 ; 0.23839092254638672 ; 1080 ; 36 ; 0.3277777777777778
